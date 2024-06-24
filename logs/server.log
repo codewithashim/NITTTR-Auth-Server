@@ -1,0 +1,134 @@
+info: Jun-24-2024 02:27:31: 	Server Started in port : 8000!
+info: Jun-24-2024 02:27:32: 	Database Connected Successfully
+info: Jun-24-2024 02:27:38: 	Server Started in port : 8000!
+info: Jun-24-2024 02:27:39: 	Database Connected Successfully
+info: Jun-24-2024 02:27:47: 	Server Started in port : 8000!
+info: Jun-24-2024 02:27:48: 	Database Connected Successfully
+info: Jun-24-2024 02:27:56: 	Server Started in port : 8000!
+info: Jun-24-2024 02:28:03: 	Server Started in port : 8000!
+info: Jun-24-2024 02:28:04: 	Database Connected Successfully
+info: Jun-24-2024 02:28:22: 	Server Started in port : 8000!
+info: Jun-24-2024 02:28:23: 	Database Connected Successfully
+info: Jun-24-2024 02:43:45: 	Server Started in port : 8000!
+info: Jun-24-2024 02:43:46: 	Database Connected Successfully
+info: Jun-24-2024 02:50:34: 	Server Started in port : 8000!
+info: Jun-24-2024 02:50:35: 	Database Connected Successfully
+info: Jun-23-2024 20:52:20: 	Server Started in port : 8000!
+info: Jun-23-2024 20:52:20: 	Database Connected Successfully
+info: Jun-23-2024 21:06:36: 	Server Started in port : 8001!
+info: Jun-23-2024 21:06:37: 	Database Connected Successfully
+info: Jun-24-2024 03:07:08: 	Server Started in port : 8001!
+info: Jun-24-2024 03:07:09: 	Database Connected Successfully
+info: Jun-23-2024 21:19:31: 	Server Started in port : 8001!
+info: Jun-24-2024 03:19:32: 	Server Started in port : 8001!
+info: Jun-23-2024 21:19:32: 	Database Connected Successfully
+info: Jun-24-2024 03:19:33: 	Database Connected Successfully
+info: Jun-23-2024 21:19:38: 	Server Started in port : 8001!
+info: Jun-24-2024 03:19:38: 	Server Started in port : 8001!
+info: Jun-23-2024 21:19:39: 	Database Connected Successfully
+info: Jun-24-2024 03:19:39: 	Database Connected Successfully
+info: Jun-24-2024 03:19:40: 	Server Started in port : 8001!
+info: Jun-23-2024 21:19:40: 	Server Started in port : 8001!
+info: Jun-24-2024 03:19:41: 	Database Connected Successfully
+info: Jun-23-2024 21:19:41: 	Database Connected Successfully
+info: Jun-23-2024 21:20:01: 	Server Started in port : 8001!
+info: Jun-24-2024 03:20:01: 	Server Started in port : 8001!
+info: Jun-23-2024 21:20:02: 	Database Connected Successfully
+info: Jun-24-2024 03:20:02: 	Database Connected Successfully
+info: Jun-24-2024 03:31:54: 	Server Started in port : 8001!
+info: Jun-24-2024 03:31:55: 	Database Connected Successfully
+info: Jun-24-2024 03:36:17: 	Server Started in port : 8001!
+info: Jun-24-2024 03:36:18: 	Database Connected Successfully
+info: Jun-24-2024 03:36:19: 	Server Started in port : 8001!
+info: Jun-24-2024 03:36:20: 	Database Connected Successfully
+error: Jun-24-2024 03:38:15: 	Validation error: number is required
+error: Jun-24-2024 03:39:21: 	Internal Server Error. ValidationError: role: Path `role` is required.
+info: Jun-24-2024 03:39:32: 	Server Started in port : 8001!
+info: Jun-24-2024 03:39:33: 	Database Connected Successfully
+info: Jun-24-2024 03:39:48: 	User Registered Successfully
+info: Jun-24-2024 03:39:54: 	Email sent successfully to Ashim at codewithashim@gmail.com
+info: Jun-24-2024 03:47:14: 	Server Started in port : 8001!
+info: Jun-24-2024 03:47:15: 	Database Connected Successfully
+info: Jun-24-2024 03:51:32: 	Server Started in port : 8001!
+info: Jun-24-2024 03:51:33: 	Database Connected Successfully
+info: Jun-24-2024 03:52:13: 	Server Started in port : 8001!
+info: Jun-24-2024 03:52:14: 	Database Connected Successfully
+info: Jun-24-2024 03:52:24: 	Server Started in port : 8001!
+info: Jun-24-2024 03:52:25: 	Database Connected Successfully
+info: Jun-24-2024 03:52:37: 	Server Started in port : 8001!
+info: Jun-24-2024 03:52:40: 	Database Connected Successfully
+info: Jun-24-2024 03:52:45: 	Server Started in port : 8001!
+info: Jun-24-2024 03:52:46: 	Database Connected Successfully
+info: Jun-24-2024 03:54:58: 	Server Started in port : 8001!
+info: Jun-24-2024 03:55:00: 	Database Connected Successfully
+info: Jun-24-2024 03:56:33: 	Server Started in port : 8001!
+info: Jun-24-2024 03:56:35: 	Database Connected Successfully
+info: Jun-24-2024 04:02:56: 	Server Started in port : 8001!
+info: Jun-24-2024 04:02:57: 	Database Connected Successfully
+info: Jun-24-2024 04:03:05: 	Server Started in port : 8001!
+info: Jun-24-2024 04:03:06: 	Database Connected Successfully
+info: Jun-24-2024 11:33:49: 	Server Started in port : 8001!
+info: Jun-24-2024 11:33:50: 	Database Connected Successfully
+info: Jun-24-2024 12:46:13: 	User Registered Successfully
+info: Jun-24-2024 12:46:16: 	Email sent successfully to Ashim Rudra Paul at codewithashim@gmail.com
+info: Jun-24-2024 13:56:00: 	User Registered Successfully
+info: Jun-24-2024 13:56:04: 	Email sent successfully to Ashim Rudra Paul at codewithashim@gmail.com
+info: Jun-24-2024 14:25:01: 	User Registered Successfully
+info: Jun-24-2024 14:25:04: 	Email sent successfully to Ashim Rudra Paul at codewithashim@gmail.com
+info: Jun-24-2024 14:26:27: 	Server Started in port : 8001!
+info: Jun-24-2024 14:26:29: 	Database Connected Successfully
+info: Jun-24-2024 14:27:06: 	User Registered Successfully
+info: Jun-24-2024 14:27:10: 	Email sent successfully to Ashim Rudra Paul at codewithashim@gmail.com
+info: Jun-24-2024 14:41:58: 	Server Started in port : 8001!
+info: Jun-24-2024 14:41:58: 	Database Connected Successfully
+info: Jun-24-2024 14:42:31: 	Server Started in port : 8001!
+info: Jun-24-2024 14:42:33: 	Database Connected Successfully
+info: Jun-24-2024 14:42:39: 	Server Started in port : 8001!
+info: Jun-24-2024 14:42:42: 	Server Started in port : 8001!
+info: Jun-24-2024 14:42:43: 	Database Connected Successfully
+info: Jun-24-2024 14:47:47: 	Server Started in port : 8001!
+info: Jun-24-2024 14:47:50: 	Database Connected Successfully
+info: Jun-24-2024 14:49:19: 	Server Started in port : 8001!
+info: Jun-24-2024 14:49:21: 	Database Connected Successfully
+info: Jun-24-2024 14:49:47: 	Server Started in port : 8001!
+info: Jun-24-2024 14:49:48: 	Database Connected Successfully
+info: Jun-24-2024 14:49:58: 	Server Started in port : 8001!
+info: Jun-24-2024 14:50:04: 	Server Started in port : 8001!
+info: Jun-24-2024 14:50:08: 	Server Started in port : 8001!
+info: Jun-24-2024 14:50:10: 	Database Connected Successfully
+info: Jun-24-2024 14:50:37: 	Server Started in port : 8001!
+info: Jun-24-2024 14:50:39: 	Database Connected Successfully
+info: Jun-24-2024 15:18:09: 	Email Has Been Successfully Verified for codewithashim@gmail.com
+info: Jun-24-2024 15:18:12: 	Email sent successfully to undefined at undefined
+info: Jun-24-2024 15:21:00: 	Server Started in port : 8001!
+info: Jun-24-2024 15:21:01: 	Database Connected Successfully
+info: Jun-24-2024 15:29:47: 	User Registered Successfully
+info: Jun-24-2024 15:29:52: 	Email sent successfully to Ashim Rudra Paul at codewithashim@gmail.com
+info: Jun-24-2024 15:31:43: 	Email Has Been Successfully Verified for codewithashim@gmail.com
+info: Jun-24-2024 15:31:46: 	Email sent successfully to undefined at undefined
+info: Jun-24-2024 15:39:23: 	Server Started in port : 8001!
+info: Jun-24-2024 15:39:25: 	Database Connected Successfully
+info: Jun-24-2024 15:39:30: 	Server Started in port : 8001!
+info: Jun-24-2024 15:39:31: 	Database Connected Successfully
+info: Jun-24-2024 15:49:23: 	Server Started in port : 8001!
+info: Jun-24-2024 15:49:25: 	Database Connected Successfully
+info: Jun-24-2024 15:50:01: 	Server Started in port : 8001!
+info: Jun-24-2024 15:50:02: 	Database Connected Successfully
+info: Jun-24-2024 15:50:08: 	Server Started in port : 8001!
+info: Jun-24-2024 15:50:09: 	Database Connected Successfully
+info: Jun-24-2024 15:50:32: 	Token Generated Successfully
+info: Jun-24-2024 15:50:32: 	User You’ve Logged In Successfully
+info: Jun-24-2024 15:59:11: 	Server Started in port : 8001!
+info: Jun-24-2024 15:59:12: 	Database Connected Successfully
+info: Jun-24-2024 17:25:35: 	Token Generated Successfully
+info: Jun-24-2024 17:25:35: 	User You’ve Logged In Successfully
+info: Jun-24-2024 18:03:07: 	Server Started in port : 8001!
+info: Jun-24-2024 18:03:14: 	Database Connected Successfully
+info: Jun-24-2024 18:54:10: 	Email sent successfully to Ashim Rudra Paul at codewithashim@gmail.com
+info: Jun-24-2024 18:54:27: 	Otp verified successfully
+error: Jun-24-2024 18:55:02: 	Error in rendering template. Failed to lookup view "forgotted_password_template.ejs" in views directory "/home/codewithashim/Web Application/Personal/NIIT HOSTEL MANAGEMENT/Backend/src/public/mailTemplate"
+info: Jun-24-2024 18:55:02: 	Password Changed Successfully for codewithashim@gmail.com
+info: Jun-24-2024 18:55:12: 	Token Generated Successfully
+info: Jun-24-2024 18:55:12: 	User You’ve Logged In Successfully
+info: Jun-24-2024 19:03:41: 	Server Started in port : 8001!
+info: Jun-24-2024 19:03:43: 	Database Connected Successfully

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: nitttr-auth-server-v1   # Specify the container name
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app            # Mount current directory to /usr/src/app in the container
+      - /usr/src/app/node_modules # Mount node_modules to prevent it from being overwritten
+    environment:
+      NODE_ENV: development
+      DB_URL: ${DB_URL}           # Define your DB_URL environment variable here
+    command: npm start            # Command to run when the container starts
