@@ -6,7 +6,7 @@ const userAPI = require("../../controller/user")
 module.exports = (app) => {
     app.post(urlConstants.USER_REGISTER, authValidator.signUpValidation, api.signUp);
     app.post(urlConstants.USER_LOGIN, authValidator.signInValidation, api.signIn);
-    app.post(urlConstants.USER_LOGIN_WITH_GOOGLE, authValidator.signInValidation, api.signInWithGoogle);
+    app.post(urlConstants.USER_LOGIN_WITH_GOOGLE, authValidator.signInWithGoogleValidation, api.signInWithGoogle);
     app.post(urlConstants.VERIFY_EMAIL, authValidator.emailVerifyValidation, api.verifyEmail);
     app.post(urlConstants.RESEND_VERIFY_EMAIL, api.resendEmailVerification);
     

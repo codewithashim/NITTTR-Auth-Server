@@ -19,6 +19,13 @@ const emailVerifyValidation = (req, res, next) => {
     validateRequest(req, res, schema, next);
 }
 
+const signInWithGoogleValidation = (req, res, next) => {
+    const schema = Joi.object({
+        token: Joi.string().required(),
+    });
+    validateRequest(req, res, schema, next);
+};
+
 const signInValidation = (req, res, next) => {
     const schema = Joi.object({
         email: Joi.string().required(),
@@ -72,5 +79,6 @@ module.exports = {
     resetPasswordValidation,
     emailVerifyValidation,
     experienceValidation,
-    educationValidation
+    educationValidation,
+    signInWithGoogleValidation
 }
