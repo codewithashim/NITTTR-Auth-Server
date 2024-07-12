@@ -1,5 +1,6 @@
 // ====== auth service
 const uuid = require("uuid");
+const axios = require("axios");
 const {
   responseData,
   messageConstants,
@@ -8,13 +9,41 @@ const {
 } = require("../../constants");
 const { cryptoGraphy, jsonWebToken } = require("../../middleware");
 const UserSchema = require("../../models/users");
-const { logger, mail } = require("../../utils");
+const { logger, mail, otpService } = require("../../utils");
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
-const { OAuth2Client } = require('google-auth-library');
 
-const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+const sendOtp = async (body) => {
+  try {
+    const otp = await otpService.saveOtpToDatabase(body.number);
+    // await otpService.sendOtpToUser(body.number, otp);
+    return { success: true, msg: "OTP sent successfully", body: {} };
+  } catch (err) {
+    const errorMsg = `${messageConstants.INTERNAL_SERVER_ERROR}. ${err.message}`;
+    console.error(errorMsg);
+    return { success: false, msg: errorMsg, status: 500 };
+  }
+};
 
+const verifyOtp = async (body) => {
+  try {
+    const { number, otp } = body;
+    const otpVerificationResponse = await otpService.verifyOtpFromDatabase(
+      number,
+      otp
+    );
+
+    if (otpVerificationResponse.verified) {
+      return { success: true, msg: "OTP verified successfully", body: {} };
+    } else {
+      return { success: false, msg: otpVerificationResponse.msg, status: 400 };
+    }
+  } catch (err) {
+    const errorMsg = `${messageConstants.INTERNAL_SERVER_ERROR}. ${err.message}`;
+    console.error(errorMsg);
+    return { success: false, msg: errorMsg, status: 500 };
+  }
+};
 
 const signUp = async (body, res) => {
   return new Promise(async () => {
@@ -77,40 +106,39 @@ const signUp = async (body, res) => {
 const signIn = async (body, res) => {
   return new Promise(async () => {
     if (body.provider && body.provider === "google") {
-      // Handle Google OAuth login
       try {
-        const googleUser = await verifyGoogleToken(body.token);
+        const googleUser = await fetchGoogleUserInfo(body.token);
         if (googleUser) {
           let user = await UserSchema.findOne({
             email: googleUser.email,
-            'social_logins.provider': 'google',
-            'social_logins.id': googleUser.sub
+            "social_logins.provider": "google",
+            "social_logins.id": googleUser.sub,
           });
 
           if (!user) {
-            // User not found with Google credentials, register them
-            user = new User({
+            user = new UserSchema({
               name: googleUser.name,
               email: googleUser.email,
-              social_logins: [{ provider: 'google', id: googleUser.sub }],
+              social_logins: [{ provider: "google", id: googleUser.sub }],
               role: "USER",
-              number: googleUser.phone,
+              number: googleUser.phone || "",
               is_email_verified: true,
             });
             await user.save();
           }
 
-          // Generate JWT token or session for the user
           const token = await jsonWebToken.createToken(user);
 
-          // Prepare response
           const responsePayload = {
-            id: user._id,
+            isVerified: true,
+            user: {
+              id: user._id,
+              email: user.email,
+              role: user.role,
+              name: user.name,
+              number: user.number,
+            },
             token,
-            email: user.email,
-            role: user.role,
-            name: user.name,
-            number: user.number,
           };
 
           logger.info(`User ${messageConstants.LOGGEDIN_SUCCESSFULLY}`);
@@ -120,23 +148,33 @@ const signIn = async (body, res) => {
             `User ${messageConstants.LOGGEDIN_SUCCESSFULLY}`
           );
         } else {
-          // Google OAuth token verification failed
-          logger.error('Google OAuth token verification failed');
-          return responseData.fail(res, 'Google OAuth token verification failed', 403);
+          logger.error("Google OAuth token verification failed");
+          return responseData.fail(
+            res,
+            "Google OAuth token verification failed",
+            403
+          );
         }
       } catch (err) {
         logger.error(`Google OAuth sign-in error: ${err}`);
-        return responseData.fail(res, `Google OAuth sign-in error: ${err}`, 500);
+        return responseData.fail(
+          res,
+          `Google OAuth sign-in error: ${err}`,
+          500
+        );
       }
     } else {
-      // Handle regular email/password login as before
       body["password"] = cryptoGraphy.encrypt(body.password);
       const user = await UserSchema.findOne({ email: body.email });
 
       if (user) {
         if (!user.is_email_verified) {
           logger.error(messageConstants.USER_NOT_VERIFIED);
-          return responseData.fail(res, messageConstants.USER_NOT_VERIFIED, 405);
+          return responseData.fail(
+            res,
+            messageConstants.USER_NOT_VERIFIED,
+            405
+          );
         }
 
         if (user.password === body.password) {
@@ -160,7 +198,11 @@ const signIn = async (body, res) => {
           );
         } else {
           logger.error(messageConstants.EMAIL_PASS_INCORRECT);
-          return responseData.fail(res, messageConstants.EMAIL_PASS_INCORRECT, 403);
+          return responseData.fail(
+            res,
+            messageConstants.EMAIL_PASS_INCORRECT,
+            403
+          );
         }
       } else {
         logger.error(messageConstants.EMAIL_NOT_FOUND);
@@ -170,70 +212,54 @@ const signIn = async (body, res) => {
   });
 };
 
- 
-const verifyGoogleToken = async (token) => {
-  const ticket = await client.verifyIdToken({
-    idToken: token,
-    audience: process.env.GOOGLE_CLIENT_ID,
-  });
-  const payload = ticket.getPayload();
-  return payload;
+const fetchGoogleUserInfo = async (token) => {
+  try {
+    const response = await axios.get(
+      "https://www.googleapis.com/oauth2/v3/userinfo",
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
+    return response.data;
+  } catch (err) {
+    logger.error("Failed to fetch Google user info", err);
+    throw new Error("Failed to fetch Google user info");
+  }
 };
 
+const verifyPhoneNumber = async (email) => {
+  try {
+    const user = await UserSchema.findOne({ email });
+    return user;
+  } catch (error) {
+    console.error(`Error finding user by email: ${error}`);
+    throw new Error("Error finding user by email");
+  }
+};
 
-// const signIn = async (body, res) => {
-//   return new Promise(async () => {
-//     body["password"] = cryptoGraphy.encrypt(body.password);
-//     const user = await UserSchema.findOne({
-//       email: body.email,
-//     });
+const verifyUserExistence = async (email, number) => {
+  try {
+    const user = await UserSchema.findOne({ $or: [{ email }, { number }] });
+    return user;
+  } catch (error) {
+    console.error(`Error finding user by email or number: ${error}`);
+    throw new Error("Error finding user by email or number");
+  }
+};
 
-//     if (user) {
-//       if (!user.is_email_verified) {
-//         logger.error(messageConstants.USER_NOT_VERIFIED);
-//         return responseData.fail(res, messageConstants.USER_NOT_VERIFIED, 405);
-//       }
-
-//       if (user.password === body.password) {
-//         const token = await jsonWebToken.createToken(user);
-//         logger.info(`User ${messageConstants.LOGGEDIN_SUCCESSFULLY}`);
-
-//         // Include 'profile_image' in the response
-//         const responsePayload = {
-//           id: user._id,
-//           token,
-//           email: user.email,
-//           role: user.role,
-//           name: user.name,
-//           number: user.number,
-//         };
-
-//         return responseData.success(
-//           res,
-//           responsePayload,
-//           `User ${messageConstants.LOGGEDIN_SUCCESSFULLY}`
-//         );
-//       } else {
-//         logger.error(messageConstants.EMAIL_PASS_INCORRECT);
-//         return responseData.fail(
-//           res,
-//           messageConstants.EMAIL_PASS_INCORRECT,
-//           403
-//         );
-//       }
-//     } else {
-//       logger.error(messageConstants.EMAIL_NOT_FOUND);
-//       return responseData.fail(res, messageConstants.EMAIL_NOT_FOUND, 403);
-//     }
-//   }).catch((err) => {
-//     logger.error(`${messageConstants.INTERNAL_SERVER_ERROR}. ${err}`);
-//     return responseData.fail(
-//       res,
-//       `${messageConstants.INTERNAL_SERVER_ERROR}. ${err}`,
-//       500
-//     );
-//   });
-// };
+const updateUserPhoneNumber = async (email, number) => {
+  try {
+    const user = await UserSchema.findOneAndUpdate(
+      { email },
+      { $set: { number: number } },
+      { new: true }
+    );
+    return user;
+  } catch (err) {
+    console.error(`Error updating user phone number: ${err.message}`);
+    throw new Error("Error updating user phone number");
+  }
+};
 
 const verifyEmail = async (req, res) => {
   return new Promise(async () => {
@@ -694,4 +720,9 @@ module.exports = {
   changePassword,
   resetPassword,
   resendEmailVerification,
+  sendOtp,
+  verifyOtp,
+  verifyPhoneNumber,
+  verifyUserExistence,
+  updateUserPhoneNumber,
 };

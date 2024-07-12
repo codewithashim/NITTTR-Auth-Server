@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const SECRET_KEY = process.env.SECRET_KEY; // Use a strong secret key, possibly from environment variables.
+const SECRET_KEY = process.env.SECRET_KEY;
 
 const authMiddleware = (req, res, next) => {
     const token = req.headers['authorization']?.split(' ')[1]; // Format: "Bearer TOKEN"

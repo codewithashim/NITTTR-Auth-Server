@@ -132,3 +132,1041 @@ info: Jun-24-2024 18:55:12: 	Token Generated Successfully
 info: Jun-24-2024 18:55:12: 	User You’ve Logged In Successfully
 info: Jun-24-2024 19:03:41: 	Server Started in port : 8001!
 info: Jun-24-2024 19:03:43: 	Database Connected Successfully
+info: Jun-25-2024 04:18:11: 	Server Started in port : 8001!
+info: Jun-25-2024 04:18:12: 	Database Connected Successfully
+info: Jun-25-2024 04:58:40: 	Server Started in port : 8001!
+info: Jun-25-2024 04:58:42: 	Database Connected Successfully
+info: Jun-25-2024 05:00:56: 	Server Started in port : 8000!
+info: Jun-25-2024 05:00:59: 	Database Connected Successfully
+info: Jun-25-2024 05:05:24: 	Server Started in port : 8001!
+info: Jun-25-2024 05:05:27: 	Database Connected Successfully
+error: Jun-25-2024 05:06:23: 	User Already Exists. Plese use another email address
+error: Jun-25-2024 05:06:36: 	User Already Exists. Plese use another email address
+error: Jun-25-2024 05:08:16: 	User Already Exists. Plese use another email address
+info: Jun-25-2024 05:09:35: 	User Registered Successfully
+info: Jun-25-2024 05:09:38: 	Email sent successfully to Aryan Raj at Aryanraj@gmail.com
+info: Jun-25-2024 05:15:33: 	Server Started in port : 8001!
+info: Jun-25-2024 05:15:36: 	Database Connected Successfully
+error: Jun-25-2024 08:39:28: 	Your Email Is Not Verified
+error: Jun-25-2024 08:39:45: 	Your Email Is Not Verified
+error: Jun-25-2024 08:40:13: 	Your Email Is Not Verified
+error: Jun-25-2024 09:12:49: 	User Already Exists. Plese use another email address
+error: Jun-25-2024 09:13:09: 	User Already Exists. Plese use another email address
+error: Jun-25-2024 09:13:13: 	User Already Exists. Plese use another email address
+info: Jun-25-2024 09:13:22: 	User Registered Successfully
+info: Jun-25-2024 09:13:26: 	Email sent successfully to Aryan raj at aryanraj@gmail.com
+info: Jun-25-2024 09:19:59: 	User Registered Successfully
+info: Jun-25-2024 09:20:03: 	Email sent successfully to Aryan raj at Aryanraj.raushan@gmail.com
+info: Jun-25-2024 09:20:36: 	Email Has Been Successfully Verified for Aryanraj.raushan@gmail.com
+info: Jun-25-2024 09:20:40: 	Email sent successfully to undefined at undefined
+info: Jun-25-2024 09:20:49: 	Token Generated Successfully
+info: Jun-25-2024 09:20:49: 	User You’ve Logged In Successfully
+error: Jun-25-2024 09:31:02: 	User Not Found With This Email
+info: Jun-25-2024 09:32:00: 	User Registered Successfully
+info: Jun-25-2024 09:32:04: 	Email sent successfully to Aryan raj at Aryanraj.raushan@gmail.com
+info: Jun-25-2024 09:33:19: 	Email Has Been Successfully Verified for Aryanraj.raushan@gmail.com
+info: Jun-25-2024 09:33:22: 	Email sent successfully to undefined at undefined
+info: Jun-25-2024 09:34:17: 	Token Generated Successfully
+info: Jun-25-2024 09:34:17: 	User You’ve Logged In Successfully
+error: Jun-25-2024 09:39:41: 	User Already Exists. Plese use another email address
+info: Jun-25-2024 17:32:20: 	Server Started in port : 8001!
+info: Jun-25-2024 17:32:22: 	Database Connected Successfully
+info: Jun-25-2024 18:36:43: 	Server Started in port : 8001!
+info: Jun-25-2024 18:36:45: 	Database Connected Successfully
+error: Jun-25-2024 18:40:42: 	Validation error: email is required, password is required
+error: Jun-25-2024 18:41:08: 	Validation error: email is required, password is required
+error: Jun-25-2024 18:51:24: 	Validation error: email is required, password is required
+error: Jun-25-2024 18:52:45: 	Validation error: email is required, password is required
+error: Jun-25-2024 18:52:56: 	Validation error: email is required, password is required
+error: Jun-25-2024 18:56:35: 	Validation error: email is required, password is required
+info: Jun-25-2024 19:02:06: 	Token Generated Successfully
+info: Jun-26-2024 00:42:18: 	Server Started in port : 8001!
+info: Jun-26-2024 00:42:19: 	Database Connected Successfully
+info: Jun-26-2024 00:43:48: 	Token Generated Successfully
+info: Jun-26-2024 00:47:59: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:00: 	Database Connected Successfully
+info: Jun-26-2024 00:48:02: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:03: 	Database Connected Successfully
+info: Jun-26-2024 00:48:08: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:09: 	Database Connected Successfully
+info: Jun-26-2024 00:48:13: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:15: 	Database Connected Successfully
+info: Jun-26-2024 00:48:18: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:18: 	Database Connected Successfully
+info: Jun-26-2024 00:48:20: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:21: 	Database Connected Successfully
+error: Jun-26-2024 00:48:37: 	Validation error: email is required, password is required
+info: Jun-26-2024 00:48:53: 	Server Started in port : 8001!
+info: Jun-26-2024 00:48:54: 	Database Connected Successfully
+info: Jun-26-2024 00:49:03: 	Server Started in port : 8001!
+info: Jun-26-2024 00:49:05: 	Server Started in port : 8001!
+info: Jun-26-2024 00:49:05: 	Database Connected Successfully
+error: Jun-26-2024 00:49:14: 	Validation error: email is required, password is required
+error: Jun-26-2024 00:49:41: 	Validation error: email is required, password is required
+error: Jun-26-2024 00:49:59: 	Validation error: email is required, password is required
+info: Jun-26-2024 00:54:09: 	Server Started in port : 8001!
+info: Jun-26-2024 00:54:10: 	Database Connected Successfully
+info: Jun-26-2024 00:54:28: 	Server Started in port : 8001!
+info: Jun-26-2024 00:54:29: 	Database Connected Successfully
+info: Jun-26-2024 00:55:00: 	Server Started in port : 8001!
+info: Jun-26-2024 00:55:00: 	Database Connected Successfully
+error: Jun-26-2024 00:57:32: 	Signin error: TypeError: Cannot read properties of undefined (reading 'provider')
+info: Jun-26-2024 00:59:09: 	Server Started in port : 8001!
+info: Jun-26-2024 00:59:10: 	Database Connected Successfully
+error: Jun-26-2024 00:59:29: 	Validation error: email is required, password is required
+error: Jun-26-2024 00:59:52: 	Validation error: email is required, password is required
+info: Jun-26-2024 01:00:10: 	Server Started in port : 8001!
+info: Jun-26-2024 01:00:12: 	Database Connected Successfully
+info: Jun-26-2024 01:00:18: 	Server Started in port : 8001!
+info: Jun-26-2024 01:00:20: 	Database Connected Successfully
+error: Jun-26-2024 01:00:38: 	Signin error: TypeError: Cannot read properties of undefined (reading 'provider')
+info: Jun-26-2024 01:01:05: 	Server Started in port : 8001!
+info: Jun-26-2024 01:01:07: 	Database Connected Successfully
+error: Jun-26-2024 01:02:07: 	Validation error: email is required, password is required
+info: Jun-26-2024 01:05:46: 	Server Started in port : 8001!
+info: Jun-26-2024 01:05:50: 	Server Started in port : 8001!
+info: Jun-26-2024 01:05:50: 	Database Connected Successfully
+info: Jun-26-2024 01:05:56: 	Server Started in port : 8001!
+info: Jun-26-2024 01:05:57: 	Database Connected Successfully
+info: Jun-26-2024 01:07:34: 	Server Started in port : 8001!
+info: Jun-26-2024 01:07:35: 	Database Connected Successfully
+info: Jun-26-2024 01:08:05: 	Server Started in port : 8001!
+info: Jun-26-2024 01:08:06: 	Database Connected Successfully
+info: Jun-26-2024 01:08:30: 	Server Started in port : 8001!
+info: Jun-26-2024 01:08:31: 	Database Connected Successfully
+error: Jun-26-2024 01:08:57: 	Signin error: TypeError: Cannot read properties of undefined (reading 'provider')
+info: Jun-26-2024 01:12:00: 	Server Started in port : 8001!
+info: Jun-26-2024 01:12:01: 	Database Connected Successfully
+error: Jun-26-2024 01:13:04: 	Signin error: TypeError: Cannot read properties of undefined (reading 'provider')
+info: Jun-26-2024 01:13:25: 	Server Started in port : 8001!
+info: Jun-26-2024 01:13:26: 	Database Connected Successfully
+info: Jun-26-2024 01:13:44: 	Server Started in port : 8001!
+info: Jun-26-2024 01:13:44: 	Database Connected Successfully
+info: Jun-26-2024 01:13:52: 	Server Started in port : 8001!
+info: Jun-26-2024 01:13:54: 	Database Connected Successfully
+error: Jun-26-2024 01:14:20: 	Validation error: email is required, password is required
+error: Jun-26-2024 01:15:49: 	Validation error: email is required, password is required
+error: Jun-26-2024 01:16:02: 	Validation error: email is required, password is required
+info: Jun-26-2024 08:51:01: 	Server Started in port : 8001!
+info: Jun-26-2024 08:51:02: 	Database Connected Successfully
+error: Jun-26-2024 08:59:39: 	Validation error: email is required, password is required
+error: Jun-26-2024 09:11:45: 	Validation error: email is required, password is required
+info: Jun-26-2024 09:15:48: 	Server Started in port : 8001!
+info: Jun-26-2024 09:15:49: 	Database Connected Successfully
+info: Jun-26-2024 09:22:00: 	Server Started in port : 8001!
+info: Jun-26-2024 09:22:01: 	Database Connected Successfully
+error: Jun-26-2024 09:22:16: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgsMLtzwEu8jQpDDBDWbB8xFJYnGVtYMT4rjtktprZI5R4n2HFewIw4g-9dC086XM33x746St8oYOEiKCSCpC0Nf0psaWn2RYfX3FXcSKwgl0Pk0XAE4hIxccfToQVtRuAJeuj0bhG5araTfxF85AI9mfavbE-saCgYKAVsSARESFQHGX2Mi1C6_SC9mzxSPnkj-iqXxBQ0170
+info: Jun-26-2024 09:25:08: 	Server Started in port : 8001!
+info: Jun-26-2024 09:25:09: 	Database Connected Successfully
+info: Jun-26-2024 09:25:12: 	Server Started in port : 8001!
+info: Jun-26-2024 09:25:13: 	Database Connected Successfully
+info: Jun-26-2024 09:25:14: 	Server Started in port : 8001!
+info: Jun-26-2024 09:25:15: 	Database Connected Successfully
+info: Jun-26-2024 09:25:39: 	Server Started in port : 8001!
+info: Jun-26-2024 09:25:40: 	Database Connected Successfully
+error: Jun-26-2024 09:25:46: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgsE0nd8ObyPTsIN_YVPnb2lBItfURX_qSuyrlvaCOkpY1u-DvivosrZ8M3XALokoF0KQSIbGH4AUIxm0UkLZ_xokxNnkMg2duw_HjRVBHs19hB2mNIveRwpvlTMTZjdnC7sll1E2VWyBvc7krLhVo7Pr3pcZokaCgYKAeASARMSFQHGX2Mi7Bv9dSqO-QVIEyTDBuOpeA0170
+info: Jun-26-2024 09:29:47: 	Server Started in port : 8001!
+info: Jun-26-2024 09:29:49: 	Server Started in port : 8001!
+info: Jun-26-2024 09:29:49: 	Database Connected Successfully
+info: Jun-26-2024 09:29:53: 	Server Started in port : 8001!
+info: Jun-26-2024 09:29:55: 	Database Connected Successfully
+info: Jun-26-2024 09:31:46: 	Server Started in port : 8001!
+info: Jun-26-2024 09:31:48: 	Server Started in port : 8001!
+info: Jun-26-2024 09:31:48: 	Database Connected Successfully
+info: Jun-26-2024 09:32:11: 	Server Started in port : 8001!
+info: Jun-26-2024 09:32:12: 	Database Connected Successfully
+info: Jun-26-2024 09:32:14: 	Server Started in port : 8001!
+info: Jun-26-2024 09:32:15: 	Database Connected Successfully
+info: Jun-26-2024 09:32:19: 	Server Started in port : 8001!
+info: Jun-26-2024 09:32:19: 	Database Connected Successfully
+info: Jun-26-2024 09:32:28: 	Server Started in port : 8001!
+info: Jun-26-2024 09:32:29: 	Database Connected Successfully
+error: Jun-26-2024 09:32:47: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgufv4YpM5bX7frOqMaXG1r_Kc-NcZC4kDc7kK_0YkjenJ3qiTaUte44Lt2H2HnLukmyM2QV6JIt2hA8DEeRGFV3gIPUWkoSK182ZM9EWe8sk2tRJzgPoVG1HgofJ6PLcSmfS9NWN8-z91J-FUlWQ04VOxdawZsaCgYKAYESARESFQHGX2MiX7U-LslGkizlA5Nnm4Sl4A0170
+info: Jun-26-2024 09:35:43: 	Server Started in port : 8001!
+info: Jun-26-2024 09:35:45: 	Database Connected Successfully
+info: Jun-26-2024 09:36:13: 	Server Started in port : 8001!
+info: Jun-26-2024 09:36:15: 	Database Connected Successfully
+error: Jun-26-2024 09:38:44: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCguxJ2D-sFiZ67Lzr7B9ldWI8QPGcGAzmxzEtHhR7pmjAJmOVmN1Xayd93IUnFpyBmah9EGLu1Z5xEknLCgykfwdTF6fm6sNPCnBXoBXC83CJ_oQG1gUSpE2ff77_Axv30SDIZn19RWqcVHwASN4X_KWN2ubNogaCgYKAQsSARESFQHGX2Mi_41MEmCuZ8NDanCZuqT1_A0170
+error: Jun-26-2024 09:40:10: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgtOFDfIH6LWFEAkOM7dr6rllR6jSBfkTdI83omfmqP4KKpWlVwLY8ROwBjH1km8n3-ISP1oL2gsWa3g7nsm7W_5PJA68gsBRQ3UiL-eAoRMuTVdcmJuCNI4K8yGZQZOoqdb8oYfVuy1z-OvEpJeQ8DL-G87IpcaCgYKAecSARESFQHGX2MiIM4DHL6iUDRZa7EiFfTWcQ0170
+error: Jun-26-2024 09:43:31: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgsSqZaksQ5IEnw5dHrZv3F3NA0wtNQkcpw78nfo8DF61_lgvPXrgUUkGGMxAyguF63aVIk0tJF9Cw1Bp26_QT8Wk4IuXlFB8J4CwHK_SVntPOqqq5nD-crOQn2HL1LoarkPly10ePbzRjd32qrcPnIXCy0NmDgaCgYKAYYSARASFQHGX2Mie7PJClUtYEjkLnpLcqitiA0170
+error: Jun-26-2024 10:08:43: 	Validation error: token is required
+error: Jun-26-2024 10:18:01: 	Validation error: token is required
+error: Jun-26-2024 10:18:33: 	Validation error: token is required
+info: Jun-26-2024 10:51:58: 	Token Generated Successfully
+info: Jun-26-2024 10:51:58: 	User You’ve Logged In Successfully
+info: Jun-26-2024 10:59:25: 	Token Generated Successfully
+info: Jun-26-2024 10:59:25: 	User You’ve Logged In Successfully
+info: Jun-26-2024 11:02:19: 	Token Generated Successfully
+info: Jun-26-2024 11:02:19: 	User You’ve Logged In Successfully
+info: Jun-26-2024 11:14:13: 	Token Generated Successfully
+info: Jun-26-2024 11:14:13: 	User You’ve Logged In Successfully
+info: Jun-26-2024 11:16:19: 	User Registered Successfully
+info: Jun-26-2024 11:16:24: 	Email sent successfully to aryan raj at aryanraj.9608820567@gmail.com
+info: Jun-26-2024 11:17:14: 	Email Has Been Successfully Verified for aryanraj.9608820567@gmail.com
+info: Jun-26-2024 11:17:18: 	Email sent successfully to undefined at undefined
+info: Jun-26-2024 11:17:40: 	Token Generated Successfully
+info: Jun-26-2024 11:17:40: 	User You’ve Logged In Successfully
+info: Jun-26-2024 11:21:48: 	Token Generated Successfully
+info: Jun-26-2024 11:21:48: 	User You’ve Logged In Successfully
+info: Jun-26-2024 12:54:00: 	Token Generated Successfully
+info: Jun-26-2024 12:54:00: 	User You’ve Logged In Successfully
+info: Jun-26-2024 13:43:36: 	Token Generated Successfully
+info: Jun-26-2024 13:43:36: 	User You’ve Logged In Successfully
+error: Jun-26-2024 16:44:15: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCguNlnSIr0g7BK3zxzaD6poAC50oO9XjNeWFc73VqqE3j1aCAwnxmoFLkp76Ux3TvY-BFg-Kn5JBIvx4fiF1vGa5Nc2u_Lum05IqhW81jpV4TXnmMn0eznkNVCUbwn8x3YhuIUuVYTM0xhKSecfg_7Ps9Xk-C7EaCgYKAT8SARESFQHGX2Miy2stcnpqI5uHXz9yROyvMg0170
+error: Jun-26-2024 16:44:32: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgsuX8mseXQ9-r2iLezLfvsnu4x05lpv1PpNBSu9gPcRpN_MXho1I0ZWT29I_LjARcEpXZDSF1cRWd22csNpdTvgV0Vvu33B0fdm4Pk0Bd8FDjscl2bTZZQsgM3CSBctVM5rDyRLAgAAMSIWBVXRs0QUgAAeVyMaCgYKARMSARESFQHGX2Mi9wnkaFeOOdKumZElUgIp6w0170
+error: Jun-26-2024 16:47:14: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCguLqbQL5K4XuWh0L3hQqsRZLKuT8haorqgzcGvjhZcguBN3ZPsY-WNAnSeCU5auwBsljhUSGTEVZn3EPHqsIRhJHKKWOkt8P_lRr0AoMMk-c3rwQMIENlZILSAOkXUOHO9Qi9mv_0QcVMeEXWehjtErDZnx34EaCgYKAdgSARESFQHGX2MifNB3SefdtC6cKIGQMpieUQ0170
+info: Jun-26-2024 16:53:58: 	Server Started in port : 8001!
+info: Jun-26-2024 16:53:59: 	Database Connected Successfully
+info: Jun-26-2024 16:54:00: 	Server Started in port : 8001!
+info: Jun-26-2024 16:54:01: 	Database Connected Successfully
+info: Jun-26-2024 16:54:37: 	Server Started in port : 8001!
+info: Jun-26-2024 16:54:38: 	Database Connected Successfully
+info: Jun-26-2024 16:54:42: 	Server Started in port : 8001!
+info: Jun-26-2024 16:54:42: 	Database Connected Successfully
+error: Jun-26-2024 16:55:03: 	Google OAuth sign-in error: Error: Invalid access token
+info: Jun-26-2024 16:58:38: 	Server Started in port : 8001!
+info: Jun-26-2024 16:58:41: 	Database Connected Successfully
+info: Jun-26-2024 16:59:01: 	Server Started in port : 8001!
+info: Jun-26-2024 16:59:03: 	Database Connected Successfully
+info: Jun-26-2024 16:59:07: 	Server Started in port : 8001!
+info: Jun-26-2024 16:59:10: 	Server Started in port : 8001!
+info: Jun-26-2024 16:59:10: 	Database Connected Successfully
+info: Jun-26-2024 16:59:34: 	Server Started in port : 8001!
+info: Jun-26-2024 16:59:35: 	Database Connected Successfully
+info: Jun-26-2024 16:59:55: 	Server Started in port : 8001!
+info: Jun-26-2024 16:59:58: 	Database Connected Successfully
+info: Jun-26-2024 17:00:01: 	Server Started in port : 8001!
+info: Jun-26-2024 17:00:02: 	Database Connected Successfully
+info: Jun-26-2024 17:00:12: 	Server Started in port : 8001!
+info: Jun-26-2024 17:00:13: 	Database Connected Successfully
+error: Jun-26-2024 17:00:23: 	Google OAuth sign-in error: ReferenceError: User is not defined
+info: Jun-26-2024 17:00:23: 	Response From signin with Google API
+info: Jun-26-2024 17:03:00: 	Server Started in port : 8001!
+info: Jun-26-2024 17:03:01: 	Database Connected Successfully
+info: Jun-26-2024 17:03:41: 	Server Started in port : 8001!
+info: Jun-26-2024 17:03:42: 	Database Connected Successfully
+info: Jun-26-2024 17:03:52: 	Server Started in port : 8001!
+info: Jun-26-2024 17:03:53: 	Database Connected Successfully
+info: Jun-26-2024 17:04:30: 	Server Started in port : 8001!
+info: Jun-26-2024 17:04:32: 	Database Connected Successfully
+info: Jun-26-2024 17:04:58: 	Server Started in port : 8001!
+info: Jun-26-2024 17:04:59: 	Database Connected Successfully
+info: Jun-26-2024 17:05:01: 	Server Started in port : 8001!
+info: Jun-26-2024 17:05:02: 	Database Connected Successfully
+info: Jun-26-2024 17:05:33: 	Server Started in port : 8001!
+info: Jun-26-2024 17:05:35: 	Database Connected Successfully
+error: Jun-26-2024 17:05:45: 	Google OAuth sign-in error: ReferenceError: User is not defined
+info: Jun-26-2024 17:09:49: 	Server Started in port : 8001!
+info: Jun-26-2024 17:09:51: 	Database Connected Successfully
+error: Jun-26-2024 17:18:54: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgvgcvaMcw4g92mjveqKBjPX3HRmcvL4qIGrmAU4dkjnFgJc6BjjMK2KW5tLveUBR60wov-SKavldUXD0JQEQwMVtOP6Pmpu0Jj_aMi7TJ-6RcYuC8dIzK9wOXwqKvB_TmZUe8pMOR2XMYm2Ar6_9KsEt5mDLBcaCgYKAe8SARESFQHGX2Mi_tKA8L-vfPL7tcPcKtQXig0170
+info: Jun-26-2024 17:19:20: 	Token Generated Successfully
+info: Jun-26-2024 17:19:20: 	User You’ve Logged In Successfully
+info: Jun-26-2024 16:45:00: 	Server Started in port : 8001!
+info: Jun-26-2024 16:45:02: 	Database Connected Successfully
+info: Jun-26-2024 16:46:14: 	Server Started in port : 8001!
+info: Jun-26-2024 16:46:16: 	Database Connected Successfully
+info: Jun-26-2024 17:33:59: 	Token Generated Successfully
+info: Jun-26-2024 17:33:59: 	User You’ve Logged In Successfully
+info: Jun-26-2024 17:34:24: 	Token Generated Successfully
+info: Jun-26-2024 17:34:24: 	User You’ve Logged In Successfully
+error: Jun-26-2024 17:34:38: 	Google OAuth sign-in error: Error: Wrong number of segments in token: ya29.a0AXooCgsJCrywyc-8urBwnXjiWhgYeltdGvIbsR96PttGi5EGpFIYsK8voh2-iR1291eNmlAW-Q4Fgw_DQZWdsr-_BIDLZ7E9vPsOTjtp7cgstKAyhXW2jCb-FOAEOLO2VPPzXfXvthEo3jcWFVY2v4pygtiZ8nRYauAaCgYKAUgSARASFQHGX2Mit-BfToha8oGvRLBif2XW7Q0170
+info: Jun-26-2024 17:47:15: 	Token Generated Successfully
+info: Jun-26-2024 17:47:15: 	User You’ve Logged In Successfully
+info: Jun-26-2024 18:20:21: 	Token Generated Successfully
+info: Jun-26-2024 18:20:21: 	User You’ve Logged In Successfully
+info: Jun-26-2024 18:22:55: 	Token Generated Successfully
+info: Jun-26-2024 18:22:55: 	User You’ve Logged In Successfully
+info: Jun-26-2024 18:38:10: 	Token Generated Successfully
+info: Jun-26-2024 18:38:10: 	User You’ve Logged In Successfully
+info: Jun-27-2024 09:43:29: 	Server Started in port : 8001!
+info: Jun-27-2024 09:43:31: 	Database Connected Successfully
+info: Jun-27-2024 10:10:08: 	Token Generated Successfully
+info: Jun-27-2024 10:10:08: 	User You’ve Logged In Successfully
+info: Jun-27-2024 10:11:03: 	Token Generated Successfully
+info: Jun-27-2024 10:11:03: 	User You’ve Logged In Successfully
+info: Jun-27-2024 10:12:01: 	Token Generated Successfully
+info: Jun-27-2024 10:12:01: 	User You’ve Logged In Successfully
+info: Jun-27-2024 10:12:42: 	Token Generated Successfully
+info: Jun-27-2024 10:12:42: 	User You’ve Logged In Successfully
+info: Jun-27-2024 11:41:25: 	Token Generated Successfully
+info: Jun-27-2024 11:41:25: 	User You’ve Logged In Successfully
+info: Jun-27-2024 15:03:43: 	Token Generated Successfully
+info: Jun-27-2024 15:03:43: 	User You’ve Logged In Successfully
+info: Jun-27-2024 18:48:29: 	Server Started in port : 8001!
+info: Jun-27-2024 18:48:31: 	Database Connected Successfully
+info: Jun-27-2024 20:54:21: 	Token Generated Successfully
+info: Jun-27-2024 20:54:21: 	User You’ve Logged In Successfully
+error: Jun-27-2024 21:05:44: 	User Not Found With This Email
+error: Jun-27-2024 21:06:02: 	Email Or Password Is Incorrect
+error: Jun-27-2024 21:06:15: 	Email Or Password Is Incorrect
+error: Jun-27-2024 21:06:43: 	Email Or Password Is Incorrect
+error: Jun-27-2024 21:07:29: 	Email Or Password Is Incorrect
+error: Jun-27-2024 21:07:31: 	Email Or Password Is Incorrect
+error: Jun-27-2024 21:07:31: 	Email Or Password Is Incorrect
+error: Jun-27-2024 21:07:32: 	Email Or Password Is Incorrect
+info: Jun-27-2024 21:10:48: 	Token Generated Successfully
+info: Jun-27-2024 21:10:48: 	User You’ve Logged In Successfully
+info: Jun-27-2024 22:09:52: 	Token Generated Successfully
+info: Jun-27-2024 22:09:52: 	User You’ve Logged In Successfully
+info: Jun-27-2024 22:25:23: 	Token Generated Successfully
+info: Jun-27-2024 22:25:23: 	User You’ve Logged In Successfully
+info: Jun-28-2024 20:13:56: 	Server Started in port : 8001!
+info: Jun-28-2024 20:13:57: 	Database Connected Successfully
+info: Jun-29-2024 12:30:59: 	Server Started in port : 8001!
+info: Jun-29-2024 12:31:00: 	Database Connected Successfully
+info: Jun-29-2024 12:34:39: 	User Registered Successfully
+info: Jun-29-2024 12:34:43: 	Email sent successfully to Aryan Raj at Aryanraj.raushan@gmail.com
+info: Jun-29-2024 12:35:05: 	Email Has Been Successfully Verified for Aryanraj.raushan@gmail.com
+info: Jun-29-2024 12:35:08: 	Email sent successfully to undefined at undefined
+info: Jun-29-2024 12:36:00: 	Token Generated Successfully
+info: Jun-29-2024 12:36:00: 	User You’ve Logged In Successfully
+info: Jun-29-2024 12:36:39: 	Email sent successfully to Aryan Raj at Aryanraj.raushan@gmail.com
+info: Jun-29-2024 12:37:39: 	Otp verified successfully
+error: Jun-29-2024 12:38:00: 	Error in rendering template. Failed to lookup view "forgotted_password_template.ejs" in views directory "C:\Users\ARYAN\Desktop\Project\NITTTR-Auth-Server\src\public\mailTemplate"
+info: Jun-29-2024 12:38:00: 	Password Changed Successfully for Aryanraj.raushan@gmail.com
+error: Jun-29-2024 12:38:13: 	Email Or Password Is Incorrect
+error: Jun-29-2024 12:38:29: 	Email Or Password Is Incorrect
+info: Jun-29-2024 12:38:57: 	Token Generated Successfully
+info: Jun-29-2024 12:38:57: 	User You’ve Logged In Successfully
+info: Jun-30-2024 16:25:32: 	Server Started in port : 8001!
+info: Jun-30-2024 16:25:34: 	Database Connected Successfully
+error: Jun-30-2024 16:51:03: 	User Not Found With This Email
+info: Jun-30-2024 16:51:09: 	Token Generated Successfully
+info: Jun-30-2024 16:51:09: 	User You’ve Logged In Successfully
+info: Jul-01-2024 08:35:17: 	Server Started in port : 8001!
+info: Jul-01-2024 08:35:17: 	Database Connected Successfully
+error: Jul-01-2024 11:25:04: 	Email Or Password Is Incorrect
+error: Jul-01-2024 11:26:45: 	Email Or Password Is Incorrect
+error: Jul-01-2024 11:27:28: 	Email Or Password Is Incorrect
+error: Jul-01-2024 11:31:18: 	Email Or Password Is Incorrect
+error: Jul-01-2024 11:32:08: 	Email Or Password Is Incorrect
+error: Jul-01-2024 11:33:39: 	Email Or Password Is Incorrect
+info: Jul-01-2024 11:34:32: 	Token Generated Successfully
+info: Jul-01-2024 11:34:32: 	User You’ve Logged In Successfully
+error: Jul-01-2024 11:48:33: 	Email Or Password Is Incorrect
+info: Jul-01-2024 11:48:41: 	Token Generated Successfully
+info: Jul-01-2024 11:48:41: 	User You’ve Logged In Successfully
+error: Jul-01-2024 12:12:42: 	Email Or Password Is Incorrect
+error: Jul-01-2024 12:14:13: 	User Not Found With This Email
+info: Jul-01-2024 12:18:15: 	Token Generated Successfully
+info: Jul-01-2024 12:18:15: 	User You’ve Logged In Successfully
+info: Jul-01-2024 12:20:41: 	Token Generated Successfully
+info: Jul-01-2024 12:20:41: 	User You’ve Logged In Successfully
+info: Jul-01-2024 12:58:59: 	Token Generated Successfully
+info: Jul-01-2024 12:58:59: 	User You’ve Logged In Successfully
+error: Jul-01-2024 13:04:24: 	Email Or Password Is Incorrect
+error: Jul-01-2024 13:04:36: 	Email Or Password Is Incorrect
+error: Jul-01-2024 13:04:40: 	Email Or Password Is Incorrect
+info: Jul-01-2024 13:04:51: 	Token Generated Successfully
+info: Jul-01-2024 13:04:51: 	User You’ve Logged In Successfully
+info: Jul-01-2024 13:07:30: 	Token Generated Successfully
+info: Jul-01-2024 13:07:30: 	User You’ve Logged In Successfully
+info: Jul-01-2024 13:16:57: 	Token Generated Successfully
+info: Jul-01-2024 13:16:57: 	User You’ve Logged In Successfully
+info: Jul-01-2024 13:18:54: 	Token Generated Successfully
+info: Jul-01-2024 13:18:54: 	User You’ve Logged In Successfully
+info: Jul-06-2024 14:14:55: 	Server Started in port : 8001!
+info: Jul-06-2024 14:14:56: 	Database Connected Successfully
+info: Jul-07-2024 20:32:11: 	Server Started in port : 8001!
+info: Jul-07-2024 20:32:12: 	Database Connected Successfully
+info: Jul-08-2024 08:38:48: 	Server Started in port : 8001!
+info: Jul-08-2024 08:38:49: 	Database Connected Successfully
+info: Jul-08-2024 09:47:53: 	Server Started in port : 8001!
+info: Jul-08-2024 09:47:54: 	Database Connected Successfully
+error: Jul-08-2024 10:10:20: 	Internal Server Error. ReferenceError: saveOtpToDatabase is not defined
+info: Jul-08-2024 10:13:17: 	Server Started in port : 8001!
+info: Jul-08-2024 10:13:18: 	Database Connected Successfully
+info: Jul-08-2024 10:18:50: 	Server Started in port : 8001!
+info: Jul-08-2024 10:18:51: 	Database Connected Successfully
+info: Jul-08-2024 10:20:24: 	Server Started in port : 8001!
+info: Jul-08-2024 10:20:24: 	Database Connected Successfully
+info: Jul-08-2024 10:20:32: 	Server Started in port : 8001!
+info: Jul-08-2024 10:20:33: 	Database Connected Successfully
+info: Jul-08-2024 10:23:43: 	Server Started in port : 8001!
+info: Jul-08-2024 10:23:44: 	Database Connected Successfully
+info: Jul-08-2024 10:23:49: 	Server Started in port : 8001!
+info: Jul-08-2024 10:23:50: 	Database Connected Successfully
+error: Jul-08-2024 10:24:21: 	Internal Server Error. ReferenceError: saveOtpToDatabase is not defined
+info: Jul-08-2024 10:30:07: 	Server Started in port : 8001!
+info: Jul-08-2024 10:30:08: 	Database Connected Successfully
+info: Jul-08-2024 10:30:12: 	Server Started in port : 8001!
+info: Jul-08-2024 10:30:13: 	Database Connected Successfully
+info: Jul-08-2024 10:30:15: 	Server Started in port : 8001!
+info: Jul-08-2024 10:30:16: 	Database Connected Successfully
+error: Jul-08-2024 10:31:00: 	User Already Exists. Plese use another email address
+error: Jul-08-2024 10:31:04: 	User Already Exists. Plese use another email address
+error: Jul-08-2024 10:31:08: 	Internal Server Error. ReferenceError: saveOtpToDatabase is not defined
+info: Jul-08-2024 10:32:59: 	Server Started in port : 8001!
+info: Jul-08-2024 10:32:59: 	Database Connected Successfully
+error: Jul-08-2024 10:33:00: 	Internal Server Error. ReferenceError: sendOtpToUser is not defined
+info: Jul-08-2024 10:33:11: 	Server Started in port : 8001!
+info: Jul-08-2024 10:33:12: 	Database Connected Successfully
+info: Jul-08-2024 10:35:43: 	Server Started in port : 8001!
+info: Jul-08-2024 10:35:44: 	Database Connected Successfully
+error: Jul-08-2024 10:36:07: 	Internal Server Error. ReferenceError: sendOtpToUser is not defined
+info: Jul-08-2024 10:39:28: 	Server Started in port : 8001!
+info: Jul-08-2024 10:39:28: 	Database Connected Successfully
+info: Jul-08-2024 10:39:32: 	Server Started in port : 8001!
+info: Jul-08-2024 10:39:32: 	Database Connected Successfully
+info: Jul-08-2024 10:40:40: 	Server Started in port : 8001!
+info: Jul-08-2024 10:40:41: 	Database Connected Successfully
+info: Jul-08-2024 10:40:49: 	Server Started in port : 8001!
+info: Jul-08-2024 10:40:50: 	Database Connected Successfully
+info: Jul-08-2024 10:40:53: 	Server Started in port : 8001!
+info: Jul-08-2024 10:40:54: 	Database Connected Successfully
+info: Jul-08-2024 10:40:57: 	Server Started in port : 8001!
+info: Jul-08-2024 10:40:58: 	Database Connected Successfully
+info: Jul-08-2024 10:41:37: 	Server Started in port : 8001!
+info: Jul-08-2024 10:41:38: 	Database Connected Successfully
+info: Jul-08-2024 10:41:44: 	Server Started in port : 8001!
+info: Jul-08-2024 10:41:45: 	Database Connected Successfully
+info: Jul-08-2024 10:41:56: 	Server Started in port : 8001!
+info: Jul-08-2024 10:41:56: 	Database Connected Successfully
+info: Jul-08-2024 10:43:15: 	Server Started in port : 8001!
+info: Jul-08-2024 10:43:16: 	Database Connected Successfully
+info: Jul-08-2024 10:44:32: 	Server Started in port : 8001!
+info: Jul-08-2024 10:44:33: 	Database Connected Successfully
+info: Jul-08-2024 10:45:29: 	Server Started in port : 8001!
+info: Jul-08-2024 10:45:30: 	Database Connected Successfully
+info: Jul-08-2024 10:45:37: 	Server Started in port : 8001!
+info: Jul-08-2024 10:45:38: 	Database Connected Successfully
+info: Jul-08-2024 10:45:43: 	Server Started in port : 8001!
+info: Jul-08-2024 10:45:43: 	Database Connected Successfully
+info: Jul-08-2024 10:45:46: 	Server Started in port : 8001!
+info: Jul-08-2024 10:45:47: 	Database Connected Successfully
+info: Jul-08-2024 10:46:00: 	Server Started in port : 8001!
+info: Jul-08-2024 10:46:01: 	Database Connected Successfully
+info: Jul-08-2024 10:46:03: 	Server Started in port : 8001!
+info: Jul-08-2024 10:46:04: 	Database Connected Successfully
+info: Jul-08-2024 10:46:11: 	Server Started in port : 8001!
+info: Jul-08-2024 10:46:12: 	Server Started in port : 8001!
+info: Jul-08-2024 10:46:13: 	Database Connected Successfully
+info: Jul-08-2024 10:46:36: 	Server Started in port : 8001!
+info: Jul-08-2024 10:46:37: 	Database Connected Successfully
+info: Jul-08-2024 10:47:44: 	Server Started in port : 8001!
+info: Jul-08-2024 10:47:45: 	Database Connected Successfully
+info: Jul-08-2024 10:47:49: 	Server Started in port : 8001!
+info: Jul-08-2024 10:47:49: 	Database Connected Successfully
+error: Jul-08-2024 10:49:01: 	Internal Server Error. ReferenceError: sendOtpToUser is not defined
+info: Jul-08-2024 10:49:14: 	Server Started in port : 8001!
+info: Jul-08-2024 10:49:15: 	Database Connected Successfully
+info: Jul-08-2024 10:49:30: 	Server Started in port : 8001!
+info: Jul-08-2024 10:49:32: 	Server Started in port : 8001!
+info: Jul-08-2024 10:49:32: 	Database Connected Successfully
+info: Jul-08-2024 10:49:36: 	Server Started in port : 8001!
+info: Jul-08-2024 10:49:37: 	Server Started in port : 8001!
+info: Jul-08-2024 10:49:38: 	Database Connected Successfully
+info: Jul-08-2024 10:50:19: 	Server Started in port : 8001!
+info: Jul-08-2024 10:50:20: 	Database Connected Successfully
+info: Jul-09-2024 08:19:46: 	Server Started in port : 8001!
+info: Jul-09-2024 08:19:47: 	Database Connected Successfully
+info: Jul-09-2024 08:23:25: 	Server Started in port : 8001!
+info: Jul-09-2024 08:23:26: 	Database Connected Successfully
+info: Jul-09-2024 08:23:31: 	Server Started in port : 8001!
+info: Jul-09-2024 08:23:33: 	Server Started in port : 8001!
+info: Jul-09-2024 08:23:34: 	Database Connected Successfully
+info: Jul-09-2024 08:23:39: 	Server Started in port : 8001!
+info: Jul-09-2024 08:23:40: 	Database Connected Successfully
+info: Jul-09-2024 08:23:43: 	Server Started in port : 8001!
+info: Jul-09-2024 08:23:44: 	Database Connected Successfully
+error: Jul-09-2024 08:24:34: 	Internal Server Error. ReferenceError: Otp is not defined
+info: Jul-09-2024 08:29:03: 	Server Started in port : 8001!
+info: Jul-09-2024 08:29:04: 	Database Connected Successfully
+error: Jul-09-2024 08:29:44: 	Internal Server Error. Error: Error sending OTP
+info: Jul-09-2024 08:50:00: 	Server Started in port : 8001!
+info: Jul-09-2024 08:50:07: 	Database Connected Successfully
+info: Jul-09-2024 08:54:25: 	Server Started in port : 8001!
+info: Jul-09-2024 08:54:27: 	Database Connected Successfully
+error: Jul-09-2024 09:14:06: 	Internal Server Error. Error: Error sending OTP
+info: Jul-09-2024 09:17:19: 	Server Started in port : 8001!
+info: Jul-09-2024 09:17:21: 	Database Connected Successfully
+info: Jul-09-2024 09:17:24: 	Server Started in port : 8001!
+info: Jul-09-2024 09:17:24: 	Database Connected Successfully
+info: Jul-09-2024 09:17:26: 	Server Started in port : 8001!
+info: Jul-09-2024 09:17:26: 	Database Connected Successfully
+error: Jul-09-2024 09:18:10: 	User Already Exists. Plese use another email address
+error: Jul-09-2024 09:18:14: 	Internal Server Error. Error: Error creating session info
+info: Jul-09-2024 09:23:16: 	Server Started in port : 8001!
+info: Jul-09-2024 09:23:17: 	Database Connected Successfully
+info: Jul-09-2024 09:23:23: 	Server Started in port : 8001!
+info: Jul-09-2024 09:23:25: 	Database Connected Successfully
+info: Jul-09-2024 09:23:54: 	Server Started in port : 8001!
+info: Jul-09-2024 09:23:55: 	Database Connected Successfully
+info: Jul-09-2024 09:24:19: 	Server Started in port : 8001!
+info: Jul-09-2024 09:24:20: 	Database Connected Successfully
+info: Jul-09-2024 09:24:23: 	Server Started in port : 8001!
+info: Jul-09-2024 09:24:24: 	Database Connected Successfully
+info: Jul-09-2024 09:24:28: 	Server Started in port : 8001!
+info: Jul-09-2024 09:24:29: 	Database Connected Successfully
+info: Jul-09-2024 09:24:50: 	Server Started in port : 8001!
+info: Jul-09-2024 09:24:51: 	Database Connected Successfully
+info: Jul-09-2024 09:24:52: 	Server Started in port : 8001!
+info: Jul-09-2024 09:24:53: 	Server Started in port : 8001!
+info: Jul-09-2024 09:24:54: 	Database Connected Successfully
+info: Jul-09-2024 09:25:09: 	Server Started in port : 8001!
+info: Jul-09-2024 09:25:10: 	Database Connected Successfully
+error: Jul-09-2024 09:25:47: 	Internal Server Error. Error creating session info
+info: Jul-09-2024 09:27:05: 	Server Started in port : 8001!
+info: Jul-09-2024 09:27:06: 	Database Connected Successfully
+error: Jul-09-2024 09:27:21: 	Internal Server Error. Error creating session info
+info: Jul-09-2024 09:29:08: 	Server Started in port : 8001!
+info: Jul-09-2024 09:29:09: 	Database Connected Successfully
+info: Jul-09-2024 09:29:23: 	Server Started in port : 8001!
+info: Jul-09-2024 09:29:23: 	Database Connected Successfully
+error: Jul-09-2024 09:29:30: 	Internal Server Error. Error creating session info
+info: Jul-09-2024 09:31:39: 	Server Started in port : 8001!
+info: Jul-09-2024 09:31:41: 	Database Connected Successfully
+info: Jul-09-2024 09:31:46: 	Server Started in port : 8001!
+info: Jul-09-2024 09:31:48: 	Database Connected Successfully
+info: Jul-09-2024 09:31:56: 	Server Started in port : 8001!
+info: Jul-09-2024 09:31:57: 	Database Connected Successfully
+error: Jul-09-2024 09:32:07: 	Internal Server Error. Error creating session info
+info: Jul-09-2024 09:35:00: 	Server Started in port : 8001!
+info: Jul-09-2024 09:35:01: 	Database Connected Successfully
+info: Jul-09-2024 09:35:05: 	Server Started in port : 8001!
+info: Jul-09-2024 09:35:06: 	Database Connected Successfully
+info: Jul-09-2024 09:35:45: 	Server Started in port : 8001!
+info: Jul-09-2024 09:35:46: 	Database Connected Successfully
+error: Jul-09-2024 09:36:09: 	Internal Server Error. Error creating session info
+info: Jul-09-2024 09:37:56: 	Server Started in port : 8001!
+info: Jul-09-2024 09:37:58: 	Database Connected Successfully
+error: Jul-09-2024 09:38:06: 	Internal Server Error. Error creating session info
+info: Jul-09-2024 09:40:13: 	Server Started in port : 8001!
+info: Jul-09-2024 09:40:15: 	Database Connected Successfully
+info: Jul-09-2024 10:03:20: 	Server Started in port : 8001!
+info: Jul-09-2024 10:03:21: 	Database Connected Successfully
+info: Jul-09-2024 10:03:44: 	Server Started in port : 8001!
+info: Jul-09-2024 10:03:45: 	Database Connected Successfully
+info: Jul-09-2024 10:03:59: 	Server Started in port : 8001!
+info: Jul-09-2024 10:04:00: 	Database Connected Successfully
+info: Jul-09-2024 10:04:03: 	Server Started in port : 8001!
+info: Jul-09-2024 10:04:05: 	Database Connected Successfully
+info: Jul-09-2024 10:04:13: 	Server Started in port : 8001!
+info: Jul-09-2024 10:04:14: 	Database Connected Successfully
+info: Jul-09-2024 10:04:19: 	Server Started in port : 8001!
+info: Jul-09-2024 10:04:20: 	Database Connected Successfully
+info: Jul-09-2024 10:04:54: 	Server Started in port : 8001!
+info: Jul-09-2024 10:04:55: 	Database Connected Successfully
+info: Jul-09-2024 10:04:59: 	Server Started in port : 8001!
+info: Jul-09-2024 10:05:00: 	Database Connected Successfully
+info: Jul-09-2024 21:25:02: 	Server Started in port : 8001!
+info: Jul-09-2024 21:25:03: 	Database Connected Successfully
+info: Jul-09-2024 21:40:28: 	Server Started in port : 8001!
+info: Jul-09-2024 21:40:30: 	Database Connected Successfully
+info: Jul-09-2024 21:40:37: 	Server Started in port : 8001!
+info: Jul-09-2024 21:40:38: 	Database Connected Successfully
+info: Jul-09-2024 21:40:39: 	Server Started in port : 8001!
+info: Jul-09-2024 21:40:41: 	Server Started in port : 8001!
+info: Jul-09-2024 21:40:42: 	Database Connected Successfully
+error: Jul-09-2024 21:41:19: 	Internal Server Error. Failed to send OTP
+info: Jul-09-2024 21:42:14: 	Server Started in port : 8001!
+info: Jul-09-2024 21:42:16: 	Database Connected Successfully
+info: Jul-09-2024 21:43:35: 	Server Started in port : 8001!
+info: Jul-09-2024 21:43:38: 	Server Started in port : 8001!
+info: Jul-09-2024 21:43:38: 	Database Connected Successfully
+info: Jul-09-2024 21:43:40: 	Server Started in port : 8001!
+info: Jul-09-2024 21:43:41: 	Database Connected Successfully
+info: Jul-09-2024 21:43:45: 	Server Started in port : 8001!
+info: Jul-09-2024 21:43:45: 	Database Connected Successfully
+error: Jul-09-2024 21:44:04: 	Internal Server Error. Failed to send OTP
+info: Jul-09-2024 21:48:27: 	Server Started in port : 8001!
+info: Jul-09-2024 21:48:28: 	Database Connected Successfully
+info: Jul-09-2024 21:48:31: 	Server Started in port : 8001!
+info: Jul-09-2024 21:48:32: 	Database Connected Successfully
+info: Jul-09-2024 21:48:34: 	Server Started in port : 8001!
+info: Jul-09-2024 21:48:35: 	Database Connected Successfully
+info: Jul-09-2024 21:48:48: 	Server Started in port : 8001!
+info: Jul-09-2024 21:48:49: 	Database Connected Successfully
+info: Jul-09-2024 21:50:14: 	Server Started in port : 8001!
+info: Jul-09-2024 21:50:16: 	Database Connected Successfully
+info: Jul-09-2024 21:50:32: 	Server Started in port : 8001!
+info: Jul-09-2024 21:50:35: 	Database Connected Successfully
+error: Jul-09-2024 21:50:40: 	Internal Server Error. res?.status is not a function
+info: Jul-09-2024 21:52:24: 	Server Started in port : 8001!
+info: Jul-09-2024 21:52:25: 	Database Connected Successfully
+info: Jul-09-2024 21:52:26: 	Server Started in port : 8001!
+info: Jul-09-2024 21:52:28: 	Database Connected Successfully
+info: Jul-09-2024 21:53:04: 	Server Started in port : 8001!
+info: Jul-09-2024 21:53:05: 	Database Connected Successfully
+info: Jul-09-2024 21:53:10: 	Server Started in port : 8001!
+info: Jul-09-2024 21:53:11: 	Database Connected Successfully
+info: Jul-09-2024 21:53:13: 	Server Started in port : 8001!
+info: Jul-09-2024 21:53:14: 	Database Connected Successfully
+info: Jul-09-2024 22:00:31: 	Server Started in port : 8001!
+info: Jul-09-2024 22:00:33: 	Database Connected Successfully
+info: Jul-09-2024 22:01:23: 	Server Started in port : 8001!
+info: Jul-09-2024 22:01:24: 	Database Connected Successfully
+info: Jul-09-2024 22:03:45: 	Server Started in port : 8001!
+info: Jul-09-2024 22:03:47: 	Database Connected Successfully
+info: Jul-09-2024 22:03:52: 	Server Started in port : 8001!
+info: Jul-09-2024 22:03:53: 	Database Connected Successfully
+error: Jul-09-2024 22:04:12: 	Send OTP API Failed Internal Server Error. Otp is not defined
+info: Jul-09-2024 22:06:08: 	Server Started in port : 8001!
+info: Jul-09-2024 22:06:09: 	Database Connected Successfully
+info: Jul-09-2024 22:06:29: 	Server Started in port : 8001!
+info: Jul-09-2024 22:06:29: 	Database Connected Successfully
+info: Jul-09-2024 22:06:35: 	Server Started in port : 8001!
+info: Jul-09-2024 22:06:36: 	Database Connected Successfully
+info: Jul-09-2024 22:06:38: 	Server Started in port : 8001!
+info: Jul-09-2024 22:06:58: 	Server Started in port : 8001!
+info: Jul-09-2024 22:06:59: 	Database Connected Successfully
+info: Jul-09-2024 22:07:10: 	Server Started in port : 8001!
+info: Jul-09-2024 22:07:10: 	Database Connected Successfully
+info: Jul-09-2024 22:07:24: 	Response From Send OTP API
+info: Jul-09-2024 22:50:31: 	Server Started in port : 8001!
+info: Jul-09-2024 22:50:32: 	Database Connected Successfully
+info: Jul-09-2024 22:59:34: 	Server Started in port : 8001!
+info: Jul-09-2024 22:59:35: 	Database Connected Successfully
+info: Jul-09-2024 23:02:04: 	Server Started in port : 8001!
+info: Jul-09-2024 23:02:05: 	Database Connected Successfully
+info: Jul-09-2024 23:03:11: 	Server Started in port : 8001!
+info: Jul-09-2024 23:03:12: 	Database Connected Successfully
+error: Jul-09-2024 23:36:44: 	User Already Exists. Plese use another email address
+info: Jul-10-2024 07:54:29: 	Server Started in port : 8001!
+info: Jul-10-2024 07:54:30: 	Database Connected Successfully
+info: Jul-10-2024 07:56:26: 	Server Started in port : 8001!
+info: Jul-10-2024 07:56:27: 	Database Connected Successfully
+info: Jul-10-2024 07:56:48: 	Server Started in port : 8001!
+info: Jul-10-2024 07:56:48: 	Database Connected Successfully
+info: Jul-10-2024 07:57:39: 	Server Started in port : 8001!
+info: Jul-10-2024 07:57:39: 	Database Connected Successfully
+info: Jul-10-2024 07:58:37: 	Server Started in port : 8001!
+info: Jul-10-2024 07:58:38: 	Database Connected Successfully
+info: Jul-10-2024 07:58:42: 	Server Started in port : 8001!
+info: Jul-10-2024 07:58:43: 	Database Connected Successfully
+info: Jul-10-2024 07:58:46: 	Server Started in port : 8001!
+info: Jul-10-2024 07:58:47: 	Database Connected Successfully
+info: Jul-10-2024 07:59:08: 	Server Started in port : 8001!
+info: Jul-10-2024 07:59:09: 	Database Connected Successfully
+info: Jul-10-2024 07:59:11: 	Server Started in port : 8001!
+info: Jul-10-2024 07:59:12: 	Database Connected Successfully
+info: Jul-10-2024 07:59:25: 	Server Started in port : 8001!
+info: Jul-10-2024 07:59:26: 	Database Connected Successfully
+info: Jul-10-2024 08:01:23: 	Server Started in port : 8001!
+info: Jul-10-2024 08:01:24: 	Database Connected Successfully
+info: Jul-10-2024 08:01:50: 	Server Started in port : 8001!
+info: Jul-10-2024 08:01:50: 	Database Connected Successfully
+info: Jul-10-2024 08:01:53: 	Server Started in port : 8001!
+info: Jul-10-2024 08:01:53: 	Database Connected Successfully
+info: Jul-10-2024 08:02:00: 	Server Started in port : 8001!
+info: Jul-10-2024 08:02:00: 	Database Connected Successfully
+info: Jul-10-2024 08:02:03: 	Server Started in port : 8001!
+info: Jul-10-2024 08:02:04: 	Database Connected Successfully
+error: Jul-10-2024 08:02:52: 	Failed to verify Google access token axios is not defined
+error: Jul-10-2024 08:02:52: 	Google OAuth sign-in error: Error: Failed to verify Google access token
+info: Jul-10-2024 08:05:24: 	Server Started in port : 8001!
+info: Jul-10-2024 08:05:25: 	Database Connected Successfully
+info: Jul-10-2024 08:05:27: 	Server Started in port : 8001!
+info: Jul-10-2024 08:05:28: 	Database Connected Successfully
+info: Jul-10-2024 08:05:32: 	Server Started in port : 8001!
+info: Jul-10-2024 08:05:33: 	Database Connected Successfully
+info: Jul-10-2024 08:05:34: 	Server Started in port : 8001!
+info: Jul-10-2024 08:05:34: 	Database Connected Successfully
+info: Jul-10-2024 08:05:41: 	Server Started in port : 8001!
+info: Jul-10-2024 08:05:42: 	Database Connected Successfully
+error: Jul-10-2024 08:05:56: 	Failed to verify Google ID token Wrong number of segments in token: ya29.a0AXooCgs6VwjgmJFaVn0Gcnh-MLHzZ3yr0X8QKrPlVimYNS-jSTYnSEfwNMPtRRow2ieHczKLD7uhHU72QiibwGrkQbAOEVJ0wWOqhNJzfWgI3Sj9DNxa5M3fbZ1ojHsTvB-xdceTJg537Te-7dUF0AdLJG_4p2t6ULEaCgYKATUSARASFQHGX2Mi8-BHOUqV2xL3kka9HCk0_g0170
+error: Jul-10-2024 08:05:56: 	Google OAuth sign-in error: Error: Failed to verify Google ID token
+info: Jul-10-2024 08:07:42: 	Server Started in port : 8001!
+info: Jul-10-2024 08:07:43: 	Database Connected Successfully
+info: Jul-10-2024 08:07:48: 	Server Started in port : 8001!
+info: Jul-10-2024 08:07:48: 	Database Connected Successfully
+info: Jul-10-2024 08:08:08: 	Server Started in port : 8001!
+info: Jul-10-2024 08:08:08: 	Database Connected Successfully
+info: Jul-10-2024 08:08:18: 	Server Started in port : 8001!
+info: Jul-10-2024 08:08:18: 	Database Connected Successfully
+info: Jul-10-2024 08:08:19: 	Server Started in port : 8001!
+info: Jul-10-2024 08:08:20: 	Database Connected Successfully
+info: Jul-10-2024 08:08:31: 	Server Started in port : 8001!
+info: Jul-10-2024 08:08:32: 	Database Connected Successfully
+error: Jul-10-2024 08:08:44: 	Failed to fetch Google user info axios is not defined
+error: Jul-10-2024 08:08:44: 	Google OAuth sign-in error: Error: Failed to fetch Google user info
+info: Jul-10-2024 08:10:36: 	Server Started in port : 8001!
+info: Jul-10-2024 08:10:37: 	Database Connected Successfully
+info: Jul-10-2024 08:12:12: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:13: 	Database Connected Successfully
+info: Jul-10-2024 08:12:17: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:17: 	Database Connected Successfully
+info: Jul-10-2024 08:12:26: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:26: 	Database Connected Successfully
+info: Jul-10-2024 08:12:27: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:28: 	Database Connected Successfully
+info: Jul-10-2024 08:12:30: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:31: 	Database Connected Successfully
+info: Jul-10-2024 08:12:32: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:33: 	Database Connected Successfully
+info: Jul-10-2024 08:12:36: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:37: 	Database Connected Successfully
+info: Jul-10-2024 08:12:41: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:42: 	Database Connected Successfully
+info: Jul-10-2024 08:12:44: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:45: 	Database Connected Successfully
+info: Jul-10-2024 08:12:46: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:47: 	Database Connected Successfully
+info: Jul-10-2024 08:12:48: 	Server Started in port : 8001!
+info: Jul-10-2024 08:12:48: 	Database Connected Successfully
+error: Jul-10-2024 08:13:14: 	Failed to fetch Google user info axios is not defined
+error: Jul-10-2024 08:13:14: 	Google OAuth sign-in error: Error: Failed to fetch Google user info
+info: Jul-10-2024 08:14:27: 	Server Started in port : 8001!
+info: Jul-10-2024 08:14:28: 	Database Connected Successfully
+info: Jul-10-2024 08:15:09: 	Server Started in port : 8001!
+info: Jul-10-2024 08:15:10: 	Database Connected Successfully
+error: Jul-10-2024 08:15:31: 	Failed to fetch Google user info axios is not defined
+error: Jul-10-2024 08:15:31: 	Google OAuth sign-in error: Error: Failed to fetch Google user info
+info: Jul-10-2024 08:16:15: 	Server Started in port : 8001!
+info: Jul-10-2024 08:16:15: 	Database Connected Successfully
+error: Jul-10-2024 08:16:27: 	Google OAuth sign-in error: ReferenceError: User is not defined
+info: Jul-10-2024 08:16:56: 	Server Started in port : 8001!
+info: Jul-10-2024 08:16:57: 	Database Connected Successfully
+info: Jul-10-2024 08:18:25: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:27: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:27: 	Database Connected Successfully
+info: Jul-10-2024 08:18:29: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:30: 	Database Connected Successfully
+info: Jul-10-2024 08:18:31: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:31: 	Database Connected Successfully
+info: Jul-10-2024 08:18:32: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:34: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:34: 	Database Connected Successfully
+info: Jul-10-2024 08:18:38: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:38: 	Database Connected Successfully
+info: Jul-10-2024 08:18:41: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:41: 	Database Connected Successfully
+info: Jul-10-2024 08:18:43: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:44: 	Database Connected Successfully
+info: Jul-10-2024 08:18:46: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:46: 	Database Connected Successfully
+info: Jul-10-2024 08:18:48: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:50: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:50: 	Database Connected Successfully
+info: Jul-10-2024 08:18:51: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:52: 	Database Connected Successfully
+info: Jul-10-2024 08:18:54: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:55: 	Database Connected Successfully
+info: Jul-10-2024 08:18:59: 	Server Started in port : 8001!
+info: Jul-10-2024 08:18:59: 	Database Connected Successfully
+info: Jul-10-2024 08:19:01: 	Server Started in port : 8001!
+info: Jul-10-2024 08:19:02: 	Database Connected Successfully
+info: Jul-10-2024 08:19:04: 	Server Started in port : 8001!
+info: Jul-10-2024 08:19:04: 	Database Connected Successfully
+info: Jul-10-2024 08:19:05: 	Server Started in port : 8001!
+info: Jul-10-2024 08:19:06: 	Database Connected Successfully
+info: Jul-10-2024 08:19:07: 	Server Started in port : 8001!
+info: Jul-10-2024 08:19:08: 	Database Connected Successfully
+info: Jul-10-2024 08:19:11: 	Server Started in port : 8001!
+info: Jul-10-2024 08:19:12: 	Database Connected Successfully
+info: Jul-10-2024 08:19:20: 	Server Started in port : 8001!
+info: Jul-10-2024 08:19:20: 	Database Connected Successfully
+info: Jul-10-2024 08:20:34: 	Server Started in port : 8001!
+info: Jul-10-2024 08:20:35: 	Database Connected Successfully
+info: Jul-10-2024 08:21:07: 	Server Started in port : 8001!
+info: Jul-10-2024 08:21:08: 	Database Connected Successfully
+info: Jul-10-2024 08:21:23: 	Server Started in port : 8001!
+info: Jul-10-2024 08:21:24: 	Database Connected Successfully
+info: Jul-10-2024 08:21:36: 	Server Started in port : 8001!
+info: Jul-10-2024 08:21:36: 	Database Connected Successfully
+info: Jul-10-2024 08:21:38: 	Server Started in port : 8001!
+info: Jul-10-2024 08:21:38: 	Database Connected Successfully
+info: Jul-10-2024 08:22:57: 	Server Started in port : 8001!
+info: Jul-10-2024 08:22:57: 	Database Connected Successfully
+error: Jul-10-2024 08:23:08: 	Failed to fetch Google user info axios is not defined
+error: Jul-10-2024 08:23:08: 	Google OAuth sign-in error: Error: Failed to fetch Google user info
+info: Jul-10-2024 08:23:48: 	Server Started in port : 8001!
+info: Jul-10-2024 08:23:49: 	Database Connected Successfully
+error: Jul-10-2024 08:23:58: 	Google OAuth sign-in error: ReferenceError: User is not defined
+info: Jul-10-2024 08:26:21: 	Server Started in port : 8001!
+info: Jul-10-2024 08:26:21: 	Database Connected Successfully
+info: Jul-10-2024 08:27:39: 	Server Started in port : 8001!
+info: Jul-10-2024 08:27:40: 	Server Started in port : 8001!
+info: Jul-10-2024 08:27:41: 	Database Connected Successfully
+info: Jul-10-2024 08:27:54: 	Server Started in port : 8001!
+info: Jul-10-2024 08:27:55: 	Database Connected Successfully
+info: Jul-10-2024 08:27:58: 	Server Started in port : 8001!
+info: Jul-10-2024 08:27:59: 	Database Connected Successfully
+info: Jul-10-2024 08:28:05: 	Server Started in port : 8001!
+info: Jul-10-2024 08:28:06: 	Database Connected Successfully
+info: Jul-10-2024 08:28:34: 	Server Started in port : 8001!
+info: Jul-10-2024 08:28:35: 	Database Connected Successfully
+info: Jul-10-2024 08:29:35: 	Token Generated Successfully
+info: Jul-10-2024 08:29:35: 	User You’ve Logged In Successfully
+info: Jul-10-2024 08:30:20: 	Server Started in port : 8001!
+info: Jul-10-2024 08:30:21: 	Database Connected Successfully
+info: Jul-10-2024 08:31:22: 	Token Generated Successfully
+info: Jul-10-2024 08:31:22: 	User You’ve Logged In Successfully
+info: Jul-10-2024 08:34:26: 	Token Generated Successfully
+info: Jul-10-2024 08:34:26: 	User You’ve Logged In Successfully
+info: Jul-10-2024 08:35:13: 	Server Started in port : 8001!
+info: Jul-10-2024 08:35:14: 	Database Connected Successfully
+info: Jul-10-2024 08:35:28: 	Server Started in port : 8001!
+info: Jul-10-2024 08:35:28: 	Database Connected Successfully
+info: Jul-10-2024 08:39:13: 	Server Started in port : 8001!
+info: Jul-10-2024 08:39:14: 	Database Connected Successfully
+info: Jul-10-2024 08:44:09: 	Server Started in port : 8001!
+info: Jul-10-2024 08:44:10: 	Database Connected Successfully
+info: Jul-10-2024 08:44:37: 	Server Started in port : 8001!
+info: Jul-10-2024 08:44:38: 	Database Connected Successfully
+info: Jul-10-2024 08:44:45: 	Server Started in port : 8001!
+info: Jul-10-2024 08:44:46: 	Database Connected Successfully
+info: Jul-10-2024 08:47:32: 	Token Generated Successfully
+info: Jul-10-2024 08:47:32: 	User You’ve Logged In Successfully
+info: Jul-10-2024 08:57:46: 	Token Generated Successfully
+info: Jul-10-2024 08:57:46: 	User You’ve Logged In Successfully
+info: Jul-10-2024 08:59:04: 	Server Started in port : 8001!
+info: Jul-10-2024 08:59:05: 	Server Started in port : 8001!
+info: Jul-10-2024 08:59:06: 	Database Connected Successfully
+info: Jul-10-2024 08:59:33: 	Server Started in port : 8001!
+info: Jul-10-2024 08:59:34: 	Database Connected Successfully
+info: Jul-10-2024 09:07:29: 	Token Generated Successfully
+info: Jul-10-2024 09:07:29: 	User You’ve Logged In Successfully
+info: Jul-10-2024 09:07:36: 	Response From Send OTP API
+error: Jul-10-2024 09:09:24: 	Send OTP API Failed Internal Server Error. Otp validation failed: number: Path `number` is required.
+info: Jul-10-2024 09:09:32: 	Response From Send OTP API
+info: Jul-10-2024 09:16:21: 	Server Started in port : 8001!
+info: Jul-10-2024 09:16:22: 	Database Connected Successfully
+info: Jul-10-2024 09:16:23: 	Server Started in port : 8001!
+info: Jul-10-2024 09:16:24: 	Database Connected Successfully
+info: Jul-10-2024 09:16:28: 	Server Started in port : 8001!
+info: Jul-10-2024 09:16:29: 	Database Connected Successfully
+info: Jul-10-2024 09:16:30: 	Server Started in port : 8001!
+info: Jul-10-2024 09:16:30: 	Database Connected Successfully
+info: Jul-10-2024 09:18:03: 	Server Started in port : 8001!
+info: Jul-10-2024 09:18:04: 	Database Connected Successfully
+error: Jul-10-2024 09:18:27: 	Send OTP API Failed Internal Server Error. Failed to send OTP
+error: Jul-10-2024 09:18:37: 	Send OTP API Failed Internal Server Error. Failed to send OTP
+info: Jul-10-2024 09:19:53: 	Server Started in port : 8001!
+info: Jul-10-2024 09:19:54: 	Database Connected Successfully
+info: Jul-10-2024 09:19:58: 	Server Started in port : 8001!
+info: Jul-10-2024 09:19:58: 	Database Connected Successfully
+info: Jul-10-2024 09:20:18: 	Response From Send OTP API
+info: Jul-10-2024 09:24:43: 	Server Started in port : 8001!
+info: Jul-10-2024 09:24:44: 	Database Connected Successfully
+info: Jul-10-2024 09:24:49: 	Response From Send OTP API
+info: Jul-10-2024 09:25:37: 	Server Started in port : 8001!
+info: Jul-10-2024 09:25:38: 	Database Connected Successfully
+info: Jul-10-2024 09:25:44: 	Server Started in port : 8001!
+info: Jul-10-2024 09:25:46: 	Server Started in port : 8001!
+info: Jul-10-2024 09:25:47: 	Database Connected Successfully
+info: Jul-10-2024 09:25:49: 	Server Started in port : 8001!
+info: Jul-10-2024 09:25:49: 	Database Connected Successfully
+info: Jul-10-2024 09:25:50: 	Server Started in port : 8001!
+info: Jul-10-2024 09:25:51: 	Database Connected Successfully
+info: Jul-10-2024 09:25:55: 	Server Started in port : 8001!
+info: Jul-10-2024 09:25:56: 	Database Connected Successfully
+info: Jul-10-2024 09:25:59: 	Server Started in port : 8001!
+info: Jul-10-2024 09:26:00: 	Database Connected Successfully
+info: Jul-10-2024 09:26:03: 	Server Started in port : 8001!
+info: Jul-10-2024 09:26:03: 	Database Connected Successfully
+info: Jul-10-2024 09:26:04: 	Server Started in port : 8001!
+info: Jul-10-2024 09:26:05: 	Database Connected Successfully
+info: Jul-10-2024 09:26:41: 	Server Started in port : 8001!
+info: Jul-10-2024 09:26:42: 	Database Connected Successfully
+info: Jul-10-2024 09:26:56: 	Response From Send OTP API
+info: Jul-10-2024 09:34:16: 	Server Started in port : 8001!
+info: Jul-10-2024 09:34:17: 	Database Connected Successfully
+info: Jul-10-2024 09:34:27: 	Server Started in port : 8001!
+info: Jul-10-2024 09:34:27: 	Database Connected Successfully
+info: Jul-10-2024 09:34:29: 	Server Started in port : 8001!
+info: Jul-10-2024 09:34:30: 	Database Connected Successfully
+info: Jul-10-2024 09:34:57: 	Server Started in port : 8001!
+info: Jul-10-2024 09:34:58: 	Database Connected Successfully
+info: Jul-10-2024 09:35:07: 	Server Started in port : 8001!
+info: Jul-10-2024 09:35:07: 	Database Connected Successfully
+info: Jul-10-2024 09:35:11: 	Server Started in port : 8001!
+info: Jul-10-2024 09:35:12: 	Database Connected Successfully
+info: Jul-10-2024 09:35:14: 	Server Started in port : 8001!
+info: Jul-10-2024 09:35:15: 	Database Connected Successfully
+info: Jul-10-2024 09:36:05: 	Server Started in port : 8001!
+info: Jul-10-2024 09:36:06: 	Database Connected Successfully
+info: Jul-10-2024 09:36:10: 	Server Started in port : 8001!
+info: Jul-10-2024 09:36:10: 	Database Connected Successfully
+info: Jul-10-2024 09:36:22: 	Server Started in port : 8001!
+info: Jul-10-2024 09:36:23: 	Server Started in port : 8001!
+info: Jul-10-2024 09:36:24: 	Database Connected Successfully
+info: Jul-10-2024 09:36:33: 	Server Started in port : 8001!
+info: Jul-10-2024 09:36:34: 	Database Connected Successfully
+info: Jul-10-2024 09:36:58: 	Response From Send OTP API
+info: Jul-10-2024 09:37:26: 	Response From Send OTP API
+info: Jul-10-2024 09:38:37: 	Response From Send OTP API
+info: Jul-10-2024 09:39:59: 	Response From Send OTP API
+info: Jul-10-2024 09:40:08: 	Response From Send OTP API
+info: Jul-10-2024 09:42:46: 	Server Started in port : 8001!
+info: Jul-10-2024 09:42:47: 	Database Connected Successfully
+info: Jul-10-2024 09:42:49: 	Server Started in port : 8001!
+info: Jul-10-2024 09:42:50: 	Database Connected Successfully
+info: Jul-10-2024 09:42:54: 	Server Started in port : 8001!
+info: Jul-10-2024 09:42:55: 	Database Connected Successfully
+info: Jul-10-2024 09:43:01: 	Server Started in port : 8001!
+info: Jul-10-2024 09:43:02: 	Database Connected Successfully
+info: Jul-10-2024 09:43:17: 	Server Started in port : 8001!
+info: Jul-10-2024 09:43:17: 	Database Connected Successfully
+info: Jul-10-2024 09:43:22: 	Server Started in port : 8001!
+info: Jul-10-2024 09:43:23: 	Database Connected Successfully
+info: Jul-10-2024 09:43:35: 	Server Started in port : 8001!
+info: Jul-10-2024 09:43:35: 	Database Connected Successfully
+info: Jul-10-2024 09:43:41: 	Response From Send OTP API
+info: Jul-10-2024 09:45:09: 	Server Started in port : 8001!
+info: Jul-10-2024 09:45:10: 	Database Connected Successfully
+info: Jul-10-2024 09:47:57: 	Server Started in port : 8001!
+info: Jul-10-2024 09:47:59: 	Database Connected Successfully
+error: Jul-10-2024 09:48:20: 	Send OTP API Failed Internal Server Error. Failed to send OTP
+info: Jul-10-2024 09:50:14: 	Response From Send OTP API
+info: Jul-10-2024 09:51:12: 	Server Started in port : 8001!
+info: Jul-10-2024 09:51:13: 	Database Connected Successfully
+error: Jul-10-2024 09:51:16: 	User Already Exists. Plese use another email address
+info: Jul-10-2024 09:51:24: 	Token Generated Successfully
+info: Jul-10-2024 09:51:24: 	User You’ve Logged In Successfully
+info: Jul-10-2024 09:51:31: 	Response From Send OTP API
+info: Jul-10-2024 10:01:32: 	Token Generated Successfully
+info: Jul-10-2024 10:01:32: 	User You’ve Logged In Successfully
+info: Jul-11-2024 09:19:50: 	Server Started in port : 8001!
+info: Jul-11-2024 09:19:51: 	Database Connected Successfully
+info: Jul-11-2024 09:36:56: 	Response From Send OTP API
+info: Jul-11-2024 09:41:11: 	Response From Send OTP API
+info: Jul-11-2024 09:41:59: 	Response From Send OTP API
+info: Jul-11-2024 10:00:09: 	Response From Send OTP API
+info: Jul-11-2024 10:02:23: 	Response From Send OTP API
+info: Jul-11-2024 10:02:23: 	User Registered Successfully
+info: Jul-11-2024 10:02:27: 	Email sent successfully to Aryan Raj at Aryanraj.raushan@gmail.com
+info: Jul-11-2024 10:02:55: 	Response From Send OTP API
+error: Jul-11-2024 10:02:55: 	User Already Exists. Plese use another email address
+info: Jul-11-2024 13:05:22: 	Server Started in port : 8001!
+info: Jul-11-2024 13:05:24: 	Database Connected Successfully
+info: Jul-11-2024 13:11:48: 	Server Started in port : 8001!
+info: Jul-11-2024 13:11:49: 	Database Connected Successfully
+info: Jul-11-2024 13:25:01: 	Response From Send OTP API
+info: Jul-11-2024 13:30:36: 	Server Started in port : 8001!
+info: Jul-11-2024 13:30:37: 	Database Connected Successfully
+info: Jul-11-2024 13:33:39: 	Server Started in port : 8001!
+info: Jul-11-2024 13:33:40: 	Database Connected Successfully
+info: Jul-11-2024 13:34:05: 	Server Started in port : 8001!
+info: Jul-11-2024 13:34:06: 	Database Connected Successfully
+info: Jul-11-2024 13:34:16: 	Server Started in port : 8001!
+info: Jul-11-2024 13:34:17: 	Database Connected Successfully
+info: Jul-11-2024 13:34:31: 	Server Started in port : 8001!
+info: Jul-11-2024 13:34:32: 	Database Connected Successfully
+info: Jul-11-2024 13:40:28: 	Server Started in port : 8001!
+info: Jul-11-2024 13:40:30: 	Database Connected Successfully
+info: Jul-11-2024 13:43:38: 	Response From Send OTP API
+info: Jul-11-2024 13:46:50: 	Response From Send OTP API
+info: Jul-11-2024 13:47:08: 	Response From Verify OTP API
+info: Jul-11-2024 13:47:55: 	Response From Verify OTP API
+info: Jul-11-2024 14:04:33: 	Response From Send OTP API
+info: Jul-11-2024 14:04:45: 	Response From Verify OTP API
+info: Jul-11-2024 14:05:39: 	Response From Verify OTP API
+info: Jul-11-2024 14:10:29: 	Response From Send OTP API
+info: Jul-11-2024 14:10:41: 	Response From Verify OTP API
+info: Jul-12-2024 14:35:33: 	Server Started in port : 8001!
+info: Jul-12-2024 14:35:35: 	Database Connected Successfully
+info: Jul-12-2024 14:38:08: 	Response From Send OTP API
+info: Jul-12-2024 14:38:57: 	Response From Send OTP API
+info: Jul-12-2024 14:39:05: 	Response From Verify OTP API
+info: Jul-12-2024 14:39:15: 	User Registered Successfully
+info: Jul-12-2024 14:39:19: 	Email sent successfully to Aryan Raj at Aryanraj.raushan@gmail.com
+info: Jul-12-2024 14:39:38: 	Email Has Been Successfully Verified for Aryanraj.raushan@gmail.com
+info: Jul-12-2024 14:39:41: 	Email sent successfully to undefined at undefined
+error: Jul-12-2024 14:39:49: 	Email Or Password Is Incorrect
+info: Jul-12-2024 14:39:57: 	Token Generated Successfully
+info: Jul-12-2024 14:39:57: 	User You’ve Logged In Successfully
+info: Jul-12-2024 14:39:57: 	Email Is Already Verified for Aryanraj.raushan@gmail.com
+info: Jul-12-2024 14:40:10: 	Token Generated Successfully
+info: Jul-12-2024 14:40:10: 	User You’ve Logged In Successfully
+info: Jul-12-2024 14:40:10: 	Email Is Already Verified for Aryanraj.raushan@gmail.com
+info: Jul-12-2024 15:01:12: 	Token Generated Successfully
+info: Jul-12-2024 15:01:12: 	User You’ve Logged In Successfully
+info: Jul-12-2024 15:03:06: 	Token Generated Successfully
+info: Jul-12-2024 15:03:06: 	User You’ve Logged In Successfully
+info: Jul-12-2024 15:03:22: 	Token Generated Successfully
+info: Jul-12-2024 15:03:22: 	User You’ve Logged In Successfully
+info: Jul-12-2024 15:46:11: 	Token Generated Successfully
+info: Jul-12-2024 15:46:11: 	User You’ve Logged In Successfully
+info: Jul-12-2024 15:46:15: 	Response From Send OTP API
+error: Jul-12-2024 15:46:49: 	Send OTP API Failed Internal Server Error. Otp validation failed: number: Path `number` is required.
+info: Jul-12-2024 15:46:54: 	Response From Send OTP API
+info: Jul-12-2024 20:25:46: 	Server Started in port : 8001!
+info: Jul-12-2024 20:25:47: 	Database Connected Successfully
+info: Jul-12-2024 20:31:36: 	Token Generated Successfully
+info: Jul-12-2024 20:31:36: 	User You’ve Logged In Successfully
+info: Jul-12-2024 20:43:26: 	Response From Send OTP API
+info: Jul-12-2024 20:44:39: 	Response From Verify OTP API
+info: Jul-12-2024 20:47:23: 	Response From Send OTP API
+info: Jul-12-2024 20:48:08: 	Response From Verify OTP API
+info: Jul-12-2024 20:49:02: 	Token Generated Successfully
+info: Jul-12-2024 20:49:02: 	User You’ve Logged In Successfully
+info: Jul-12-2024 21:09:09: 	Server Started in port : 8001!
+info: Jul-12-2024 21:09:11: 	Database Connected Successfully
+info: Jul-12-2024 21:13:25: 	Server Started in port : 8001!
+info: Jul-12-2024 21:13:28: 	Database Connected Successfully
+info: Jul-12-2024 21:14:45: 	Server Started in port : 8001!
+info: Jul-12-2024 21:14:46: 	Database Connected Successfully
+info: Jul-12-2024 21:16:12: 	Server Started in port : 8001!
+info: Jul-12-2024 21:16:13: 	Database Connected Successfully
+info: Jul-12-2024 21:18:37: 	Token Generated Successfully
+info: Jul-12-2024 21:18:37: 	User You’ve Logged In Successfully
+info: Jul-12-2024 21:18:41: 	Response From Send OTP API
+info: Jul-12-2024 21:18:46: 	Response From Verify OTP API
+info: Jul-12-2024 21:19:14: 	Response From Verify OTP API
+info: Jul-12-2024 21:19:56: 	Response From Verify OTP API
+info: Jul-12-2024 21:31:25: 	Token Generated Successfully
+info: Jul-12-2024 21:31:25: 	User You’ve Logged In Successfully
+info: Jul-12-2024 21:31:33: 	Response From Send OTP API
+info: Jul-12-2024 21:41:18: 	Server Started in port : 8001!
+info: Jul-12-2024 21:41:19: 	Database Connected Successfully
+info: Jul-12-2024 21:42:26: 	Server Started in port : 8001!
+info: Jul-12-2024 21:42:29: 	Database Connected Successfully
+info: Jul-12-2024 21:43:03: 	Server Started in port : 8001!
+info: Jul-12-2024 21:43:05: 	Database Connected Successfully
+info: Jul-12-2024 21:46:26: 	Server Started in port : 8001!
+info: Jul-12-2024 21:46:27: 	Database Connected Successfully
+info: Jul-12-2024 21:46:52: 	Server Started in port : 8001!
+info: Jul-12-2024 21:46:53: 	Database Connected Successfully
+info: Jul-12-2024 21:48:26: 	Server Started in port : 8001!
+info: Jul-12-2024 21:48:28: 	Database Connected Successfully
+info: Jul-12-2024 21:49:51: 	Server Started in port : 8001!
+info: Jul-12-2024 21:49:53: 	Database Connected Successfully
+error: Jul-12-2024 21:50:01: 	Email is required
+info: Jul-12-2024 21:57:09: 	Server Started in port : 8001!
+info: Jul-12-2024 21:57:10: 	Database Connected Successfully
+info: Jul-12-2024 21:59:13: 	Server Started in port : 8001!
+info: Jul-12-2024 21:59:17: 	Database Connected Successfully
+info: Jul-12-2024 21:59:45: 	Server Started in port : 8001!
+info: Jul-12-2024 21:59:46: 	Database Connected Successfully
+info: Jul-12-2024 22:00:15: 	Server Started in port : 8001!
+info: Jul-12-2024 22:00:16: 	Database Connected Successfully
+info: Jul-12-2024 22:00:23: 	Token Generated Successfully
+info: Jul-12-2024 22:00:23: 	User You’ve Logged In Successfully
+info: Jul-12-2024 22:00:37: 	Response From Send OTP API
+info: Jul-12-2024 22:02:41: 	Server Started in port : 8001!
+info: Jul-12-2024 22:02:42: 	Database Connected Successfully
+info: Jul-12-2024 22:03:14: 	Server Started in port : 8001!
+info: Jul-12-2024 22:03:15: 	Database Connected Successfully
+info: Jul-12-2024 22:07:08: 	Server Started in port : 8001!
+info: Jul-12-2024 22:07:10: 	Database Connected Successfully
+info: Jul-12-2024 22:09:21: 	Token Generated Successfully
+info: Jul-12-2024 22:09:21: 	User You’ve Logged In Successfully
+info: Jul-12-2024 22:09:24: 	Response From Send OTP API
+info: Jul-12-2024 22:10:50: 	Token Generated Successfully
+info: Jul-12-2024 22:10:50: 	User You’ve Logged In Successfully
+error: Jul-12-2024 22:11:16: 	User Already Exists. Plese use another email address
+error: Jul-12-2024 22:11:27: 	User Already Exists. Plese use another email address
+error: Jul-12-2024 22:11:28: 	User Already Exists. Plese use another email address
+error: Jul-12-2024 22:12:22: 	User Already Exists. Plese use another email address
+error: Jul-12-2024 22:12:23: 	User Already Exists. Plese use another email address
+info: Jul-12-2024 22:13:49: 	Response From Send OTP API
+info: Jul-12-2024 22:14:23: 	Response From Verify OTP API
+info: Jul-12-2024 22:14:27: 	User Registered Successfully
+info: Jul-12-2024 22:14:32: 	Email sent successfully to Aryan Raj at aryanraj.9608820567@gmail.com
+error: Jul-12-2024 22:14:59: 	User Not Found!
+error: Jul-12-2024 22:15:09: 	Your Email Is Not Verified
+error: Jul-12-2024 22:15:13: 	Your Email Is Not Verified
+error: Jul-12-2024 22:15:28: 	User Not Found!
+error: Jul-12-2024 22:15:34: 	Your Email Is Not Verified
+error: Jul-12-2024 22:17:58: 	Your Email Is Not Verified
+info: Jul-12-2024 22:20:10: 	Response From Send OTP API
+info: Jul-12-2024 22:20:41: 	Response From Verify OTP API
+info: Jul-12-2024 22:20:42: 	User Registered Successfully
+info: Jul-12-2024 22:20:46: 	Email sent successfully to Aryan Raj at aryanraj.raushan@gmail.com
+info: Jul-12-2024 22:20:56: 	Email Has Been Successfully Verified for aryanraj.raushan@gmail.com
+info: Jul-12-2024 22:20:59: 	Email sent successfully to undefined at undefined
+info: Jul-12-2024 22:21:05: 	Token Generated Successfully
+info: Jul-12-2024 22:21:05: 	User You’ve Logged In Successfully
+error: Jul-12-2024 22:21:26: 	Google OAuth sign-in error: MongoServerError: E11000 duplicate key error collection: NITTTR.users index: users_email_key dup key: { email: "aryanraj.raushan@gmail.com" }
+error: Jul-12-2024 22:21:42: 	Google OAuth sign-in error: MongoServerError: E11000 duplicate key error collection: NITTTR.users index: users_email_key dup key: { email: "aryanraj.raushan@gmail.com" }

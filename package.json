@@ -14,11 +14,11 @@
   },
   "author": "NITTTR",
   "license": "ISC",
- 
   "dependencies": {
     "@aws-sdk/client-s3": "^3.438.0",
     "@googleapis/calendar": "^9.3.2",
     "@types/stripe": "^8.0.417",
+    "axios": "^1.7.2",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
@@ -26,6 +26,7 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "firebase-admin": "^12.2.0",
     "fs": "^0.0.1-security",
     "google-auth-library": "^9.11.0",
     "googleapis": "^126.0.1",
@@ -42,6 +43,7 @@
     "socket.io": "^4.7.2",
     "stripe": "^12.18.0",
     "swagger-ui-express": "^5.0.0",
+    "twilio": "^5.2.2",
     "uuid": "^9.0.0",
     "vercel": "^32.5.0",
     "winston": "^3.11.0",

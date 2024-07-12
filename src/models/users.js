@@ -22,7 +22,8 @@ const userSchema = mongoose.Schema({
   email: {
     type: String,
     required: true,
-    index: { unique: true },
+    lowercase: true,
+    index: { unique: true, collation: { locale: "en", strength: 2 } },
   },
   number: {
     type: String,
@@ -77,5 +78,11 @@ const userSchema = mongoose.Schema({
     default: Date.now,
   },
 });
+
+userSchema.index(
+  { email: 1 },
+  { unique: true, collation: { locale: "en", strength: 2 } }
+);
+
 
 module.exports = mongoose.model("users", userSchema);
