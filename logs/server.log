@@ -1170,3 +1170,80 @@ info: Jul-12-2024 22:21:05: 	Token Generated Successfully
 info: Jul-12-2024 22:21:05: 	User You’ve Logged In Successfully
 error: Jul-12-2024 22:21:26: 	Google OAuth sign-in error: MongoServerError: E11000 duplicate key error collection: NITTTR.users index: users_email_key dup key: { email: "aryanraj.raushan@gmail.com" }
 error: Jul-12-2024 22:21:42: 	Google OAuth sign-in error: MongoServerError: E11000 duplicate key error collection: NITTTR.users index: users_email_key dup key: { email: "aryanraj.raushan@gmail.com" }
+info: Jul-12-2024 23:24:54: 	Server Started in port : 8001!
+info: Jul-12-2024 23:24:55: 	Database Connected Successfully
+error: Jul-12-2024 23:26:44: 	Google OAuth sign-in error: MongoServerError: E11000 duplicate key error collection: NITTTR.users index: users_email_key dup key: { email: "aryanraj.raushan@gmail.com" }
+info: Jul-12-2024 23:27:35: 	Token Generated Successfully
+info: Jul-12-2024 23:27:35: 	User You’ve Logged In Successfully
+info: Jul-12-2024 23:27:48: 	Token Generated Successfully
+info: Jul-12-2024 23:27:48: 	User You’ve Logged In Successfully
+info: Jul-12-2024 23:27:51: 	Response From Send OTP API
+info: Jul-14-2024 16:23:14: 	Server Started in port : 8001!
+info: Jul-14-2024 16:23:15: 	Database Connected Successfully
+error: Jul-14-2024 16:26:04: 	User Not Found With This Email
+error: Jul-14-2024 16:26:14: 	Email Or Password Is Incorrect
+info: Jul-14-2024 16:26:22: 	Token Generated Successfully
+info: Jul-14-2024 16:26:22: 	User You’ve Logged In Successfully
+info: Jul-28-2024 22:51:14: 	Server Started in port : 8001!
+info: Jul-28-2024 22:51:15: 	Database Connected Successfully
+info: Jul-29-2024 06:55:36: 	Server Started in port : 8001!
+info: Jul-29-2024 06:55:37: 	Database Connected Successfully
+info: Jul-29-2024 07:25:19: 	Server Started in port : 8001!
+info: Jul-29-2024 07:25:20: 	Database Connected Successfully
+info: Jul-29-2024 07:28:42: 	Server Started in port : 8001!
+info: Jul-29-2024 07:28:44: 	Database Connected Successfully
+info: Jul-29-2024 07:45:52: 	Server Started in port : 8001!
+info: Jul-29-2024 07:45:53: 	Database Connected Successfully
+info: Jul-29-2024 07:45:59: 	Server Started in port : 8001!
+info: Jul-29-2024 07:46:00: 	Database Connected Successfully
+info: Jul-29-2024 07:48:12: 	Server Started in port : 8001!
+info: Jul-29-2024 07:48:13: 	Database Connected Successfully
+info: Jul-29-2024 07:50:12: 	Server Started in port : 8001!
+info: Jul-29-2024 07:50:13: 	Database Connected Successfully
+info: Jul-29-2024 07:51:48: 	Server Started in port : 8001!
+info: Jul-29-2024 07:51:50: 	Database Connected Successfully
+info: Jul-29-2024 07:52:16: 	Server Started in port : 8001!
+info: Jul-29-2024 07:52:18: 	Database Connected Successfully
+info: Jul-29-2024 07:53:08: 	Server Started in port : 8001!
+info: Jul-29-2024 07:53:10: 	Database Connected Successfully
+info: Jul-29-2024 07:53:21: 	Server Started in port : 8001!
+info: Jul-29-2024 07:53:22: 	Database Connected Successfully
+info: Jul-29-2024 07:53:33: 	Server Started in port : 8001!
+info: Jul-29-2024 07:53:33: 	Database Connected Successfully
+info: Jul-29-2024 07:54:54: 	Token Generated Successfully
+info: Jul-29-2024 07:54:54: 	User You’ve Logged In Successfully
+info: Jul-29-2024 08:06:01: 	Server Started in port : 8001!
+info: Jul-29-2024 08:06:02: 	Database Connected Successfully
+info: Jul-29-2024 08:07:01: 	Server Started in port : 8001!
+info: Jul-29-2024 08:07:03: 	Database Connected Successfully
+info: Jul-29-2024 08:07:46: 	Server Started in port : 8001!
+info: Jul-29-2024 08:07:48: 	Database Connected Successfully
+info: Jul-29-2024 08:18:56: 	Server Started in port : 8001!
+info: Jul-29-2024 08:18:58: 	Database Connected Successfully
+info: Jul-29-2024 08:20:32: 	Server Started in port : 8001!
+info: Jul-29-2024 08:20:33: 	Database Connected Successfully
+info: Jul-29-2024 08:23:34: 	Server Started in port : 8001!
+info: Jul-29-2024 08:23:35: 	Database Connected Successfully
+info: Jul-29-2024 08:37:27: 	Server Started in port : 8001!
+info: Jul-29-2024 08:37:29: 	Server Started in port : 8001!
+info: Jul-29-2024 08:37:29: 	Database Connected Successfully
+info: Jul-29-2024 08:37:57: 	Server Started in port : 8001!
+info: Jul-29-2024 08:37:58: 	Database Connected Successfully
+info: Jul-29-2024 22:13:04: 	Server Started in port : 8001!
+info: Jul-29-2024 22:13:05: 	Database Connected Successfully
+info: Jul-29-2024 22:18:05: 	Server Started in port : 8001!
+info: Jul-29-2024 22:18:06: 	Database Connected Successfully
+info: Jul-29-2024 22:18:22: 	Server Started in port : 8001!
+info: Jul-29-2024 22:18:23: 	Database Connected Successfully
+info: Jul-29-2024 22:29:29: 	Server Started in port : 8001!
+info: Jul-29-2024 22:29:31: 	Database Connected Successfully
+info: Jul-29-2024 22:30:04: 	Server Started in port : 8001!
+info: Jul-29-2024 22:30:05: 	Database Connected Successfully
+info: Jul-30-2024 08:59:57: 	Server Started in port : 8001!
+info: Jul-30-2024 08:59:58: 	Database Connected Successfully
+info: Jul-30-2024 09:04:11: 	Server Started in port : 8001!
+info: Jul-30-2024 09:04:12: 	Database Connected Successfully
+info: Jul-30-2024 09:14:31: 	Server Started in port : 8001!
+info: Jul-30-2024 09:14:32: 	Database Connected Successfully
+info: Jul-30-2024 09:22:12: 	Server Started in port : 8001!
+info: Jul-30-2024 09:22:14: 	Database Connected Successfully

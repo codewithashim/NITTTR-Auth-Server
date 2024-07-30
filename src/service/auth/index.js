@@ -12,6 +12,36 @@ const UserSchema = require("../../models/users");
 const { logger, mail, otpService } = require("../../utils");
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
+const crypto = require("crypto");
+
+const generateOrderId = () => {
+  const timestamp = Date.now();
+  const randomNum = Math.floor(Math.random() * 1000000);
+  return `ORD-${timestamp}-${randomNum}`;
+};
+
+const generateTraceId = () => {
+  return crypto.randomBytes(16).toString("hex");
+};
+
+const getCurrentISTTimestamp = () => {
+  const date = new Date();
+  const offset = 5.5 * 60 * 60 * 1000; // IST offset
+  const istTime = new Date(date.getTime() + offset);
+  return istTime.toISOString().replace("T", " ").replace("Z", "");
+};
+
+const createJWSHMAC = (payload, secret) => {
+  const header = Buffer.from(
+    JSON.stringify({ alg: "HS256", typ: "JWT" })
+  ).toString("base64");
+  const body = Buffer.from(JSON.stringify(payload)).toString("base64");
+  const signature = crypto
+    .createHmac("sha256", secret)
+    .update(`${header}.${body}`)
+    .digest("base64");
+  return `${header}.${body}.${signature}`;
+};
 
 const sendOtp = async (body) => {
   try {
@@ -42,6 +72,101 @@ const verifyOtp = async (body) => {
     const errorMsg = `${messageConstants.INTERNAL_SERVER_ERROR}. ${err.message}`;
     console.error(errorMsg);
     return { success: false, msg: errorMsg, status: 500 };
+  }
+};
+
+const createOrder = async (amount, userId) => {
+  try {
+    const orderId = generateOrderId();
+    const timestamp = getCurrentISTTimestamp();
+
+    const payload = {
+      mercid: process.env.BILL_DESK_MERCHANT_ID,
+      orderid: orderId,
+      amount: amount.toFixed(2),
+      order_date: timestamp,
+      currency: "356",
+      ru: process.env.BILL_DESK_RETURN_URL,
+      additional_info: {
+        additional_info1: "Details1",
+        additional_info2: "Details2",
+      },
+      itemcode: "DIRECT",
+      device: {
+        init_channel: "internet",
+        ip: "<customer’s IP Address>", // You should capture this from the request
+        user_agent:
+          "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0",
+        accept_header: "text/html",
+        browser_tz: "-330",
+        browser_color_depth: "32",
+        browser_java_enabled: "false",
+        browser_screen_height: "601",
+        browser_screen_width: "657",
+        browser_language: "en-US",
+        browser_javascript_enabled: "true",
+      },
+    };
+
+    const jwsHmac = createJWSHMAC(payload, process.env.BILL_DESK_SECRET_KEY);
+
+    const response = await axios.post(
+      `${process.env.BILL_DESK_SANDBOX_URL}/orders/create`,
+      payload,
+      {
+        headers: {
+          Authorization: `Bearer ${jwsHmac}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (response.data.success) {
+      return {
+        success: true,
+        bdorderid: response.data.bdorderid,
+        rdata: response.data.rdata,
+      };
+    } else {
+      return { success: false, msg: response.data.msg };
+    }
+  } catch (error) {
+    console.error("Error creating order:", error);
+    return { success: false, msg: "Internal Server Error" };
+  }
+};
+
+const retrieveTransaction = async (bdorderid) => {
+  try {
+    const traceId = generateTraceId();
+    const timestamp = getCurrentISTTimestamp();
+    const payload = {
+      clientId: process.env.BILL_DESK_CLIENT_ID,
+      bdorderid: bdorderid,
+      traceId: traceId,
+      timestamp: timestamp,
+    };
+    const jwsHmac = createJWSHMAC(payload, process.env.BILL_DESK_SECRET_KEY);
+
+    const response = await axios.post(
+      `${process.env.BILL_DESK_SANDBOX_URL}/transactions/get`,
+      payload,
+      {
+        headers: {
+          Authorization: `Bearer ${jwsHmac}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (response.data.success) {
+      return { success: true, transaction: response.data.transaction };
+    } else {
+      return { success: false, msg: response.data.msg };
+    }
+  } catch (error) {
+    console.error("Error retrieving transaction:", error);
+    return { success: false, msg: "Internal Server Error" };
   }
 };
 
@@ -725,4 +850,6 @@ module.exports = {
   verifyPhoneNumber,
   verifyUserExistence,
   updateUserPhoneNumber,
+  createOrder,
+  retrieveTransaction,
 };

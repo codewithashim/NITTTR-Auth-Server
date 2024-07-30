@@ -104,6 +104,51 @@ const verifyUserExistence = async (req, res) => {
   }
 };
 
+const createOrder = async (req, res) => {
+  try {
+    const { amount, userId } = req.body;
+    const paymentResponse = await authService.createOrder(amount, userId);
+    if (paymentResponse.success) {
+      return res.json({
+        success: true,
+        bdorderid: paymentResponse.bdorderid,
+        rdata: paymentResponse.rdata,
+      });
+    } else {
+      return res.status(400).json({ success: false, msg: paymentResponse.msg });
+    }
+  } catch (error) {
+    console.error(`Error during payment verification: ${error}`);
+    return res
+      .status(500)
+      .json({ success: false, msg: "Internal Server Error" });
+  }
+};
+
+const retrieveTransaction = async (req, res) => {
+  try {
+    const { bdorderid } = req.body;
+    const transactionResponse = await authService.retrieveTransaction(
+      bdorderid
+    );
+    if (transactionResponse.success) {
+      return res.json({
+        success: true,
+        transaction: transactionResponse.transaction,
+      });
+    } else {
+      return res
+        .status(400)
+        .json({ success: false, msg: transactionResponse.msg });
+    }
+  } catch (error) {
+    console.error(`Error during transaction retrieval: ${error}`);
+    return res
+      .status(500)
+      .json({ success: false, msg: "Internal Server Error" });
+  }
+};
+
 const signIn = async (req, res) => {
   try {
     const response = await authService.signIn(req.body, res);
@@ -271,6 +316,8 @@ module.exports = {
   sendOtp,
   verifyOtp,
   verifyPhone,
+  createOrder,
+  retrieveTransaction,
   verifyUserExistence,
   verifyGooglePhoneNumber,
 };

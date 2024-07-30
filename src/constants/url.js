@@ -9,6 +9,9 @@ const urlConstants = {
   VERIFY_MOBILE: "/api/check-phone-verification",
   USER_EXISTANCE: "/api/check-user-existence",
   VERIFY_GOOGLE_PHONE_NUMBER: "/api/verify-google-phone-number",
+  VERIFY_PAYMENT: "/api/verify-payment",
+  CREATE_ORDER: "/api/payment/create-order",
+  RETRIVE_TRANSACTION: "/api/payment/retrieve-transaction",
 
   REFRESH_TOKEN: "/token",
   GET_USER_LIST: "/users/list",
