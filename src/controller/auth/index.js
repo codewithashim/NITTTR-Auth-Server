@@ -5,6 +5,9 @@ const { logger } = require("../../utils");
 const { getUserData } = require("../../middleware");
 const responseData = require("../../constants/responses");
 
+const { BILLDESK_CLIENT_ID, BILLDESK_SECRET_KEY, BILLDESK_CREATE_ORDER_URL } =
+  process.env;
+
 const signUp = async (req, res) => {
   try {
     const response = await authService.signUp(req.body, res);
@@ -80,6 +83,44 @@ const verifyPhone = async (req, res) => {
     return res
       .status(500)
       .json({ isVerified: false, msg: "Internal Server Error" });
+  }
+};
+
+const createOrder = async (req, res) => {
+  try {
+    const orderData = {
+      mercid: process.env.BILLDESK_MERCHANT_ID,
+      orderid: req.body.orderid,
+      amount: req.body.amount,
+      order_date: new Date().toISOString(),
+      currency: "356",
+      ru: req.body.return_url,
+      additional_info: {
+        additional_info1: req.body.additional_info1,
+        additional_info2: req.body.additional_info2,
+      },
+      itemcode: "DIRECT",
+      device: {
+        init_channel: "internet",
+        ip: req.ip,
+        user_agent: req.headers["user-agent"],
+        accept_header: "text/html",
+        browser_tz: "-330",
+        browser_color_depth: "32",
+        browser_java_enabled: "false",
+        browser_screen_height: "601",
+        browser_screen_width: "657",
+        browser_language: "en-US",
+        browser_javascript_enabled: "true",
+      },
+    };
+
+    const orderResponse = await authService.createBillDeskOrder(orderData);
+    res.json(orderResponse);
+    console.log("orderResponse: ", orderResponse, res.json(orderResponse));
+  } catch (error) {
+    console.error(`Error creating order: ${error}`);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 };
 
@@ -273,5 +314,5 @@ module.exports = {
   verifyPhone,
   verifyUserExistence,
   verifyGooglePhoneNumber,
+  createOrder,
 };
-

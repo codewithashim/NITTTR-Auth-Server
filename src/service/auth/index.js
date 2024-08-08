@@ -12,6 +12,92 @@ const UserSchema = require("../../models/users");
 const { logger, mail, otpService } = require("../../utils");
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
+const jwt = require("jsonwebtoken");
+
+function generateTimestampAndTraceId() {
+  const now = new Date();
+  const year = now.getUTCFullYear();
+  const month = (now.getUTCMonth() + 1).toString().padStart(2, "0");
+  const day = now.getUTCDate().toString().padStart(2, "0");
+  const hours = now.getUTCHours().toString().padStart(2, "0");
+  const minutes = now.getUTCMinutes().toString().padStart(2, "0");
+  const seconds = now.getUTCSeconds().toString().padStart(2, "0");
+
+  const timestamp = `${year}${month}${day}${hours}${minutes}${seconds}`;
+  const suffix = Math.random().toString(36).substring(2, 5).toUpperCase();
+  const traceId = `${timestamp}${suffix}`;
+
+  return {
+    bdTimestamp: timestamp,
+    bdTraceid: traceId,
+  };
+}
+
+const { bdTimestamp, bdTraceid } = generateTimestampAndTraceId();
+
+function createToken(payload, secretKey) {
+  const options = {
+    algorithm: "HS256",
+    header: {
+      clientid: process.env.BILLDESK_CLIENT_ID,
+    },
+  };
+  return jwt.sign(payload, secretKey, options);
+}
+
+const createBillDeskOrder = async (orderData) => {
+  try {
+    const payload = {
+      mercid: orderData.mercid,
+      orderid: orderData.orderid,
+      amount: orderData.amount.toString(),
+      order_date: new Date(orderData.order_date).toISOString(),
+      currency: orderData.currency,
+      ru: orderData.ru,
+      additional_info: orderData.additional_info,
+      itemcode: orderData.itemcode,
+      device: {
+        init_channel: orderData.device.init_channel,
+        ip: orderData.device.ip,
+        user_agent: orderData.device.user_agent,
+        accept_header: orderData.device.accept_header,
+        fingerprintid: orderData.device.fingerprintid,
+        browser_tz: orderData.device.browser_tz,
+        browser_color_depth: orderData.device.browser_color_depth,
+        browser_java_enabled: orderData.device.browser_java_enabled,
+        browser_screen_height: orderData.device.browser_screen_height,
+        browser_screen_width: orderData.device.browser_screen_width,
+        browser_language: orderData.device.browser_language,
+        browser_javascript_enabled: orderData.device.browser_javascript_enabled,
+      },
+    };
+
+    const token = createToken(payload, process.env.BILLDESK_SECRET_KEY);
+    const traceId = bdTraceid;
+    const timestamp = bdTimestamp;
+
+    const response = await axios.post(
+      process.env.BILLDESK_CREATE_ORDER_URL,
+      token,
+      {
+        headers: {
+          "content-type": "application/jose",
+          "bd-timestamp": timestamp,
+          accept: "application/jose",
+          "bd-traceid": traceId,
+        },
+      }
+    );
+    if (response) {
+      console.log("BillDesk order created successfully:", response.data);
+      return response.data;
+    } else {
+      console.log("BillDesk order not created successfully", response.error);
+    }
+  } catch (error) {
+    console.log("BillDesk order failed", error.message);
+  }
+};
 
 const sendOtp = async (body) => {
   try {
@@ -725,4 +811,5 @@ module.exports = {
   verifyPhoneNumber,
   verifyUserExistence,
   updateUserPhoneNumber,
+  createBillDeskOrder,
 };

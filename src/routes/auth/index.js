@@ -29,8 +29,7 @@ module.exports = (app) => {
     urlConstants.VERIFY_GOOGLE_PHONE_NUMBER,
     api.verifyGooglePhoneNumber
   );
-
-  //TODO Refresh Token
+  app.post(urlConstants.CREATE_ORDER, api.createOrder);
 
   app.get(
     urlConstants.GET_USER_BY_ID,
