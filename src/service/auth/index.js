@@ -45,13 +45,64 @@ function createToken(payload, secretKey) {
   return jwt.sign(payload, secretKey, options);
 }
 
+function decodeJWT(token) {
+  try {
+    const base64Url = token.split(".")[1];
+    if (!base64Url) throw new Error("Invalid token: missing payload.");
+    const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+    const jsonPayload = decodeURIComponent(
+      atob(base64)
+        .split("")
+        .map(function (c) {
+          return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+        })
+        .join("")
+    );
+
+    return JSON.parse(jsonPayload);
+  } catch (error) {
+    console.error("Failed to decode JWT:", error);
+    return null;
+  }
+}
+
+async function createOrder(token, timestamp, traceId) {
+  try {
+    const response = await axios.post(
+      process.env.BILLDESK_CREATE_ORDER_URL,
+      token,
+      {
+        headers: {
+          "content-type": "application/jose",
+          "bd-timestamp": timestamp,
+          accept: "application/jose",
+          "bd-traceid": traceId,
+        },
+      }
+    );
+    console.log("Response:", response.data);
+    return response.data;
+  } catch (error) {
+    if (error.response) {
+      console.error("Error data:", error.response.data);
+      console.error("Error status:", error.response.status);
+      console.error("Error headers:", error.response.headers);
+    } else if (error.request) {
+      console.error("Error request:", error.request);
+    } else {
+      console.error("Error message:", error.message);
+    }
+    throw error;
+  }
+}
+
 const createBillDeskOrder = async (orderData) => {
   try {
     const payload = {
       mercid: orderData.mercid,
       orderid: orderData.orderid,
       amount: orderData.amount.toString(),
-      order_date: new Date(orderData.order_date).toISOString(),
+      order_date: orderData.order_date,
       currency: orderData.currency,
       ru: orderData.ru,
       additional_info: orderData.additional_info,
@@ -76,26 +127,18 @@ const createBillDeskOrder = async (orderData) => {
     const traceId = bdTraceid;
     const timestamp = bdTimestamp;
 
-    const response = await axios.post(
-      process.env.BILLDESK_CREATE_ORDER_URL,
-      token,
-      {
-        headers: {
-          "content-type": "application/jose",
-          "bd-timestamp": timestamp,
-          accept: "application/jose",
-          "bd-traceid": traceId,
-        },
-      }
+    console.log("traceid order duplicated", payload);
+
+    const orderResponse = await createOrder(token, timestamp, traceId);
+
+    console.log(
+      "BillDesk order created successfully:",
+      decodeJWT(orderResponse)
     );
-    if (response) {
-      console.log("BillDesk order created successfully:", response.data);
-      return response.data;
-    } else {
-      console.log("BillDesk order not created successfully", response.error);
-    }
+    return decodeJWT(orderResponse);
   } catch (error) {
-    console.log("BillDesk order failed", error.message);
+    console.error("BillDesk order error:", error);
+    throw error;
   }
 };
 

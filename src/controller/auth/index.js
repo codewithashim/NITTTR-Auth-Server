@@ -5,9 +5,6 @@ const { logger } = require("../../utils");
 const { getUserData } = require("../../middleware");
 const responseData = require("../../constants/responses");
 
-const { BILLDESK_CLIENT_ID, BILLDESK_SECRET_KEY, BILLDESK_CREATE_ORDER_URL } =
-  process.env;
-
 const signUp = async (req, res) => {
   try {
     const response = await authService.signUp(req.body, res);
@@ -86,13 +83,30 @@ const verifyPhone = async (req, res) => {
   }
 };
 
+const formatDateWithTimezone = (date) => {
+  const pad = (number) => (number < 10 ? `0${number}` : number);
+
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+  const seconds = pad(date.getSeconds());
+  const offset = date.getTimezoneOffset();
+  const offsetSign = offset > 0 ? "-" : "+";
+  const offsetHours = pad(Math.floor(Math.abs(offset) / 60));
+  const offsetMinutes = pad(Math.abs(offset) % 60);
+
+  return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${offsetSign}${offsetHours}:${offsetMinutes}`;
+};
+
 const createOrder = async (req, res) => {
   try {
     const orderData = {
       mercid: process.env.BILLDESK_MERCHANT_ID,
       orderid: req.body.orderid,
       amount: req.body.amount,
-      order_date: new Date().toISOString(),
+      order_date: formatDateWithTimezone(new Date()),
       currency: "356",
       ru: req.body.return_url,
       additional_info: {
@@ -116,8 +130,8 @@ const createOrder = async (req, res) => {
     };
 
     const orderResponse = await authService.createBillDeskOrder(orderData);
-    res.json(orderResponse);
-    console.log("orderResponse: ", orderResponse, res.json(orderResponse));
+    console.log("orderResponse: ", orderResponse);
+    return res.json(orderResponse);
   } catch (error) {
     console.error(`Error creating order: ${error}`);
     res.status(500).json({ error: "Internal Server Error" });
