@@ -83,6 +83,61 @@ const verifyPhone = async (req, res) => {
   }
 };
 
+const formatDateWithTimezone = (date) => {
+  const pad = (number) => (number < 10 ? `0${number}` : number);
+
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+  const seconds = pad(date.getSeconds());
+  const offset = date.getTimezoneOffset();
+  const offsetSign = offset > 0 ? "-" : "+";
+  const offsetHours = pad(Math.floor(Math.abs(offset) / 60));
+  const offsetMinutes = pad(Math.abs(offset) % 60);
+
+  return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${offsetSign}${offsetHours}:${offsetMinutes}`;
+};
+
+const createOrder = async (req, res) => {
+  try {
+    const orderData = {
+      mercid: process.env.BILLDESK_MERCHANT_ID,
+      orderid: req.body.orderid,
+      amount: req.body.amount,
+      order_date: formatDateWithTimezone(new Date()),
+      currency: "356",
+      ru: req.body.return_url,
+      additional_info: {
+        additional_info1: req.body.additional_info1,
+        additional_info2: req.body.additional_info2,
+      },
+      itemcode: "DIRECT",
+      device: {
+        init_channel: "internet",
+        ip: req.ip,
+        user_agent: req.headers["user-agent"],
+        accept_header: "text/html",
+        browser_tz: "-330",
+        browser_color_depth: "32",
+        browser_java_enabled: "false",
+        browser_screen_height: "601",
+        browser_screen_width: "657",
+        browser_language: "en-US",
+        browser_javascript_enabled: "true",
+      },
+    };
+
+    const orderResponse = await authService.createBillDeskOrder(orderData);
+    console.log("orderResponse: ", orderResponse);
+    return res.json(orderResponse);
+  } catch (error) {
+    console.error(`Error creating order: ${error}`);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
 const verifyUserExistence = async (req, res) => {
   try {
     const { email, number } = req.body;
@@ -273,5 +328,5 @@ module.exports = {
   verifyPhone,
   verifyUserExistence,
   verifyGooglePhoneNumber,
+  createOrder,
 };
-
