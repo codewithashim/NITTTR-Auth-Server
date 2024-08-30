@@ -10,6 +10,7 @@ const urlConstants = {
   USER_EXISTANCE: "/api/check-user-existence",
   VERIFY_GOOGLE_PHONE_NUMBER: "/api/verify-google-phone-number",
   CREATE_ORDER: "/api/create-order",
+  PAYMENT_CALLBACK: "/api/payment/callback",
 
   REFRESH_TOKEN: "/token",
   GET_USER_LIST: "/users/list",

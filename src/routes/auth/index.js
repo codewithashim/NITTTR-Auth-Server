@@ -30,6 +30,7 @@ module.exports = (app) => {
     api.verifyGooglePhoneNumber
   );
   app.post(urlConstants.CREATE_ORDER, api.createOrder);
+  app.post(urlConstants.PAYMENT_CALLBACK, api.paymentCallback);
 
   app.get(
     urlConstants.GET_USER_BY_ID,
