@@ -81,13 +81,10 @@ async function createOrder(token, timestamp, traceId) {
         },
       }
     );
-    console.log("Response:", response.data);
     return response.data;
   } catch (error) {
     if (error.response) {
-      console.error("Error data:", error.response.data);
-      console.error("Error status:", error.response.status);
-      console.error("Error headers:", error.response.headers);
+      console.error("Error data:", error.response);
     } else if (error.request) {
       console.error("Error request:", error.request);
     } else {
