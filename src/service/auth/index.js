@@ -9,6 +9,7 @@ const {
 } = require("../../constants");
 const { cryptoGraphy, jsonWebToken } = require("../../middleware");
 const UserSchema = require("../../models/users");
+const BookingSchema = require("../../models/booking");
 const { logger, mail, otpService } = require("../../utils");
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
@@ -80,13 +81,10 @@ async function createOrder(token, timestamp, traceId) {
         },
       }
     );
-    console.log("Response:", response.data);
     return response.data;
   } catch (error) {
     if (error.response) {
-      console.error("Error data:", error.response.data);
-      console.error("Error status:", error.response.status);
-      console.error("Error headers:", error.response.headers);
+      console.error("Error data:", error.response);
     } else if (error.request) {
       console.error("Error request:", error.request);
     } else {
@@ -126,15 +124,7 @@ const createBillDeskOrder = async (orderData) => {
     const token = createToken(payload, process.env.BILLDESK_SECRET_KEY);
     const traceId = bdTraceid;
     const timestamp = bdTimestamp;
-
-    console.log("traceid order duplicated", payload);
-
     const orderResponse = await createOrder(token, timestamp, traceId);
-
-    console.log(
-      "BillDesk order created successfully:",
-      decodeJWT(orderResponse)
-    );
     return decodeJWT(orderResponse);
   } catch (error) {
     console.error("BillDesk order error:", error);
@@ -840,6 +830,23 @@ const verificationCodeByEmail = async (res, user) => {
   );
 };
 
+const updateBookingStatus = async (orderid, status) => {
+  try {
+    const booking = await BookingSchema.findOne({ _id: orderid });
+
+    if (!booking) {
+      throw new Error(`Booking not found for order ID: ${orderid}`);
+    }
+    booking.bookingStatus = status;
+    booking.updatedAt = Date.now();
+    await booking.save();
+    return booking;
+  } catch (error) {
+    console.error("Error updating booking status:", error);
+    throw error;
+  }
+};
+
 module.exports = {
   signUp,
   signIn,
@@ -855,4 +862,6 @@ module.exports = {
   verifyUserExistence,
   updateUserPhoneNumber,
   createBillDeskOrder,
+  createOrder,
+  updateBookingStatus,
 };

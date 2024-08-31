@@ -4,6 +4,31 @@ const authService = require("../../service/auth");
 const { logger } = require("../../utils");
 const { getUserData } = require("../../middleware");
 const responseData = require("../../constants/responses");
+const querystring = require("querystring");
+const atob = require("atob");
+
+const decodeJWT = (token) => {
+  try {
+    const parts = token.split(".");
+    if (parts.length !== 3) {
+      throw new Error(
+        "Invalid token: expected 3 parts (header, payload, signature)."
+      );
+    }
+    const base64Url = parts[1];
+    const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
+    const jsonPayload = decodeURIComponent(
+      atob(base64)
+        .split("")
+        .map((char) => "%" + ("00" + char.charCodeAt(0).toString(16)).slice(-2))
+        .join("")
+    );
+    return JSON.parse(jsonPayload);
+  } catch (error) {
+    console.error("Failed to decode JWT:", error.message || error);
+    return null; 
+  }
+};
 
 const signUp = async (req, res) => {
   try {
@@ -130,11 +155,52 @@ const createOrder = async (req, res) => {
     };
 
     const orderResponse = await authService.createBillDeskOrder(orderData);
-    console.log("orderResponse: ", orderResponse);
     return res.json(orderResponse);
   } catch (error) {
     console.error(`Error creating order: ${error}`);
     res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+const paymentCallback = async (req, res) => {
+  try {
+    const requestBody = req.body;
+    let transaction_response;
+    if (requestBody?.transaction_response) {
+      transaction_response = requestBody.transaction_response;
+    } else if (requestBody.encrypted_response) {
+      const queryParams = querystring.parse(requestBody.encrypted_response);
+      transaction_response = queryParams.transaction_response;
+    } else {
+      throw new Error("No transaction response found in the request body.");
+    }
+
+    if (!transaction_response) {
+      throw new Error("No transaction response found");
+    }
+
+    const decodedResponse = decodeJWT(transaction_response);
+
+    if (!decodedResponse) {
+      throw new Error("Failed to decode transaction response");
+    }
+    const { auth_status, orderid, payment_method_type, additional_info } =
+      decodedResponse;
+    const { additional_info1 } = additional_info;
+    if (auth_status === "0300") {
+      // await authService.updateBookingStatus(orderid, "CONFIRMED");
+      res.redirect(
+        `${process.env.BASE_URL}/payment/success/${additional_info1}?order_id=${orderid}&paymentStatus="CONFIRMED"`
+      );
+    } else {
+      // await authService.updateBookingStatus(orderid, "FAILED");
+      res.redirect(
+        `${process.env.BASE_URL}/payment/failure/${additional_info1}?order_id=${orderid}&paymentStatus="FAILED"`
+      );
+    }
+  } catch (error) {
+    console.error("Error handling payment callback:", error.message || error);
+    res.status(500).send("Internal Server Error");
   }
 };
 
@@ -156,6 +222,30 @@ const verifyUserExistence = async (req, res) => {
     return res
       .status(500)
       .json({ exists: false, msg: "Internal Server Error" });
+  }
+};
+
+const retrieveTransaction = async (req, res) => {
+  try {
+    const { bdorderid } = req.body;
+    const transactionResponse = await authService.retrieveTransaction(
+      bdorderid
+    );
+    if (transactionResponse.success) {
+      return res.json({
+        success: true,
+        transaction: transactionResponse.transaction,
+      });
+    } else {
+      return res
+        .status(400)
+        .json({ success: false, msg: transactionResponse.msg });
+    }
+  } catch (error) {
+    console.error(`Error during transaction retrieval: ${error}`);
+    return res
+      .status(500)
+      .json({ success: false, msg: "Internal Server Error" });
   }
 };
 
@@ -326,7 +416,10 @@ module.exports = {
   sendOtp,
   verifyOtp,
   verifyPhone,
+  createOrder,
+  retrieveTransaction,
   verifyUserExistence,
   verifyGooglePhoneNumber,
   createOrder,
+  paymentCallback,
 };
