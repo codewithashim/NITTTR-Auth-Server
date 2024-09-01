@@ -26,8 +26,9 @@ const userSchema = mongoose.Schema({
   },
   number: {
     type: String,
-    index: { unique: true, sparse: true },
-    default: undefined,
+    index: true,
+    unique: true,
+    sparse: true,
   },
   password: {
     type: String,
@@ -81,7 +82,7 @@ const userSchema = mongoose.Schema({
 
 userSchema.index(
   { email: 1 },
-  { unique: true, collation: { locale: "en", strength: 2 } }
+  { unique: false, collation: { locale: "en", strength: 2 } }
 );
 
 

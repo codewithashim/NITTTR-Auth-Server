@@ -242,8 +242,10 @@ const signIn = async (body, res) => {
               is_email_verified: true,
             };
 
-            if (googleUser.phone) {
+            if (googleUser.phone && googleUser.phone.trim() !== "") {
               newUser.number = googleUser.phone;
+            } else {
+              newUser.number = undefined;
             }
 
             user = new UserSchema(newUser);
@@ -259,7 +261,7 @@ const signIn = async (body, res) => {
               email: user.email,
               role: user.role,
               name: user.name,
-              number: user.number,
+              number: user.number || undefined,
             },
             token,
           };
@@ -303,15 +305,13 @@ const signIn = async (body, res) => {
         if (user.password === body.password) {
           const token = await jsonWebToken.createToken(user);
           logger.info(`User ${messageConstants.LOGGEDIN_SUCCESSFULLY}`);
-
-          // Include 'profile_image' in the response
           const responsePayload = {
             id: user._id,
             token,
             email: user.email,
             role: user.role,
             name: user.name,
-            number: user.number,
+            number: user.number || undefined,
           };
 
           return responseData.success(

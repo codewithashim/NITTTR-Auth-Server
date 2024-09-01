@@ -223,15 +223,19 @@ const paymentCallback = async (req, res) => {
 const verifyUserExistence = async (req, res) => {
   try {
     const { email, number } = req.body;
-
-    const user = await authService.verifyUserExistence(email, number);
-
-    if (user) {
-      return res.status(200).json({ exists: true, msg: "User exists", user });
-    } else {
-      return res
-        .status(200)
-        .json({ exists: false, msg: "User does not exist" });
+    if (
+      email !== "" ||
+      number !== "" ||
+      (number !== null && number !== undefined)
+    ) {
+      const user = await authService.verifyUserExistence(email, number);
+      if (user) {
+        return res.status(200).json({ exists: true, msg: "User exists", user });
+      } else {
+        return res
+          .status(200)
+          .json({ exists: false, msg: "User does not exist" });
+      }
     }
   } catch (error) {
     console.error(`Error verifying user existence: ${error}`);
