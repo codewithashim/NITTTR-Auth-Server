@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const { userType } = require("../constants");
-const { Schema } = require("mongoose");
 
 const socialLoginSchema = mongoose.Schema({
   provider: {
@@ -27,7 +26,8 @@ const userSchema = mongoose.Schema({
   },
   number: {
     type: String,
-    index: { unique: true },
+    index: { unique: true, sparse: true },
+    default: undefined,
   },
   password: {
     type: String,

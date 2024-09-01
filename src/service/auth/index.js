@@ -9,7 +9,6 @@ const {
 } = require("../../constants");
 const { cryptoGraphy, jsonWebToken } = require("../../middleware");
 const UserSchema = require("../../models/users");
-const BookingSchema = require("../../models/booking");
 const { logger, mail, otpService } = require("../../utils");
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
@@ -235,14 +234,19 @@ const signIn = async (body, res) => {
           });
 
           if (!user) {
-            user = new UserSchema({
+            const newUser = {
               name: googleUser.name,
               email: googleUser.email,
               social_logins: [{ provider: "google", id: googleUser.sub }],
               role: "USER",
-              number: googleUser.phone || "",
               is_email_verified: true,
-            });
+            };
+
+            if (googleUser.phone) {
+              newUser.number = googleUser.phone;
+            }
+
+            user = new UserSchema(newUser);
             await user.save();
           }
 
@@ -830,23 +834,6 @@ const verificationCodeByEmail = async (res, user) => {
   );
 };
 
-const updateBookingStatus = async (orderid, status) => {
-  try {
-    const booking = await BookingSchema.findOne({ _id: orderid });
-
-    if (!booking) {
-      throw new Error(`Booking not found for order ID: ${orderid}`);
-    }
-    booking.bookingStatus = status;
-    booking.updatedAt = Date.now();
-    await booking.save();
-    return booking;
-  } catch (error) {
-    console.error("Error updating booking status:", error);
-    throw error;
-  }
-};
-
 module.exports = {
   signUp,
   signIn,
@@ -863,5 +850,4 @@ module.exports = {
   updateUserPhoneNumber,
   createBillDeskOrder,
   createOrder,
-  updateBookingStatus,
 };
