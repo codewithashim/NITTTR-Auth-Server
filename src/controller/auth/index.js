@@ -6,6 +6,7 @@ const { getUserData } = require("../../middleware");
 const responseData = require("../../constants/responses");
 const querystring = require("querystring");
 const atob = require("atob");
+const BookingSchema = require("../../models/bookingDetails");
 
 const decodeJWT = (token) => {
   try {
@@ -26,7 +27,7 @@ const decodeJWT = (token) => {
     return JSON.parse(jsonPayload);
   } catch (error) {
     console.error("Failed to decode JWT:", error.message || error);
-    return null; 
+    return null;
   }
 };
 
@@ -184,18 +185,33 @@ const paymentCallback = async (req, res) => {
     if (!decodedResponse) {
       throw new Error("Failed to decode transaction response");
     }
-    const { auth_status, orderid, payment_method_type, additional_info } =
+    const { auth_status, payment_method_type, additional_info, transactionid } =
       decodedResponse;
     const { additional_info1 } = additional_info;
+    const bookingStatus = auth_status === "0300" ? "CONFIRMED" : "CANCELED";
+    const paymentStatus = auth_status === "0300" ? "SUCCESS" : "FAILED";
+
+    const result = await BookingSchema.findOneAndUpdate(
+      { _id: additional_info1 },
+      {
+        $set: {
+          bookPaymentId: transactionid,
+          bookingStatus: bookingStatus,
+          paymentStatus: paymentStatus,
+        },
+      },
+      {
+        new: true,
+        upsert: true,
+      }
+    );
     if (auth_status === "0300") {
-      // await authService.updateBookingStatus(orderid, "CONFIRMED");
       res.redirect(
-        `${process.env.BASE_URL}/payment/success/${additional_info1}?order_id=${orderid}&paymentStatus="CONFIRMED"`
+        `${process.env.BASE_URL}/payment/success/${additional_info1}?paymentStatus="CONFIRMED"`
       );
     } else {
-      // await authService.updateBookingStatus(orderid, "FAILED");
       res.redirect(
-        `${process.env.BASE_URL}/payment/failure/${additional_info1}?order_id=${orderid}&paymentStatus="FAILED"`
+        `${process.env.BASE_URL}/payment/success/${additional_info1}?paymentStatus="FAILED"`
       );
     }
   } catch (error) {
@@ -207,15 +223,19 @@ const paymentCallback = async (req, res) => {
 const verifyUserExistence = async (req, res) => {
   try {
     const { email, number } = req.body;
-
-    const user = await authService.verifyUserExistence(email, number);
-
-    if (user) {
-      return res.status(200).json({ exists: true, msg: "User exists", user });
-    } else {
-      return res
-        .status(200)
-        .json({ exists: false, msg: "User does not exist" });
+    if (
+      email !== "" ||
+      number !== "" ||
+      (number !== null && number !== undefined)
+    ) {
+      const user = await authService.verifyUserExistence(email, number);
+      if (user) {
+        return res.status(200).json({ exists: true, msg: "User exists", user });
+      } else {
+        return res
+          .status(200)
+          .json({ exists: false, msg: "User does not exist" });
+      }
     }
   } catch (error) {
     console.error(`Error verifying user existence: ${error}`);

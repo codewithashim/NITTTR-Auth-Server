@@ -9,7 +9,6 @@ const {
 } = require("../../constants");
 const { cryptoGraphy, jsonWebToken } = require("../../middleware");
 const UserSchema = require("../../models/users");
-const BookingSchema = require("../../models/booking");
 const { logger, mail, otpService } = require("../../utils");
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
@@ -235,14 +234,21 @@ const signIn = async (body, res) => {
           });
 
           if (!user) {
-            user = new UserSchema({
+            const newUser = {
               name: googleUser.name,
               email: googleUser.email,
               social_logins: [{ provider: "google", id: googleUser.sub }],
               role: "USER",
-              number: googleUser.phone || "",
               is_email_verified: true,
-            });
+            };
+
+            if (googleUser.phone && googleUser.phone.trim() !== "") {
+              newUser.number = googleUser.phone;
+            } else {
+              newUser.number = undefined;
+            }
+
+            user = new UserSchema(newUser);
             await user.save();
           }
 
@@ -255,7 +261,7 @@ const signIn = async (body, res) => {
               email: user.email,
               role: user.role,
               name: user.name,
-              number: user.number,
+              number: user.number || undefined,
             },
             token,
           };
@@ -299,15 +305,13 @@ const signIn = async (body, res) => {
         if (user.password === body.password) {
           const token = await jsonWebToken.createToken(user);
           logger.info(`User ${messageConstants.LOGGEDIN_SUCCESSFULLY}`);
-
-          // Include 'profile_image' in the response
           const responsePayload = {
             id: user._id,
             token,
             email: user.email,
             role: user.role,
             name: user.name,
-            number: user.number,
+            number: user.number || undefined,
           };
 
           return responseData.success(
@@ -830,23 +834,6 @@ const verificationCodeByEmail = async (res, user) => {
   );
 };
 
-const updateBookingStatus = async (orderid, status) => {
-  try {
-    const booking = await BookingSchema.findOne({ _id: orderid });
-
-    if (!booking) {
-      throw new Error(`Booking not found for order ID: ${orderid}`);
-    }
-    booking.bookingStatus = status;
-    booking.updatedAt = Date.now();
-    await booking.save();
-    return booking;
-  } catch (error) {
-    console.error("Error updating booking status:", error);
-    throw error;
-  }
-};
-
 module.exports = {
   signUp,
   signIn,
@@ -863,5 +850,4 @@ module.exports = {
   updateUserPhoneNumber,
   createBillDeskOrder,
   createOrder,
-  updateBookingStatus,
 };

@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const { userType } = require("../constants");
-const { Schema } = require("mongoose");
 
 const socialLoginSchema = mongoose.Schema({
   provider: {
@@ -27,7 +26,9 @@ const userSchema = mongoose.Schema({
   },
   number: {
     type: String,
-    index: { unique: true },
+    index: true,
+    unique: true,
+    sparse: true,
   },
   password: {
     type: String,
@@ -81,7 +82,7 @@ const userSchema = mongoose.Schema({
 
 userSchema.index(
   { email: 1 },
-  { unique: true, collation: { locale: "en", strength: 2 } }
+  { unique: false, collation: { locale: "en", strength: 2 } }
 );
 
 
